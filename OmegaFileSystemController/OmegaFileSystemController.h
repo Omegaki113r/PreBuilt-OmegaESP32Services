@@ -9,6 +9,7 @@ extern "C"
 #include <assert.h>
 #include <errno.h>
 #include <stdbool.h>
+#include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -17,7 +18,9 @@ extern "C"
     typedef enum
     {
         SUCCESS,
+        FAILED,
         FILE_NOT_EXIST,
+        NO_MEM,
         UNKNOWN
     } FileSystemStatus;
 
@@ -26,7 +29,7 @@ extern "C"
         READING = 1 << 0,
         WRITING = 1 << 1,
         APPEND = 1 << 2,
-        OVERRIDE = 1 << 3,
+        OVERWRITE = 1 << 3,
     } FileSystemOpenMode;
 
     typedef uint32_t FileHandle;
@@ -38,6 +41,7 @@ extern "C"
 
     void OmegaFileSystemController_reset_module(OmegaFileSystemController_t *);
     FileSystemStatus OmegaFileSystemController_open_file(OmegaFileSystemController_t *, FileHandle *, const char *, FileSystemOpenMode);
+    FileSystemStatus OmegaFileSystemController_close_file(OmegaFileSystemController_t *, FileHandle);
 
 #ifdef __cplusplus
 }
