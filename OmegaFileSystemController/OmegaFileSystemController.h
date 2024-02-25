@@ -15,10 +15,13 @@ extern "C"
 #include <string.h>
 #include <time.h>
 
+#include <esp_log.h>
+
     typedef enum
     {
         SUCCESS,
         FAILED,
+        INVALID_OPENMODE,
         FILE_NOT_EXIST,
         NO_MEM,
         UNKNOWN
@@ -32,7 +35,11 @@ extern "C"
         OVERWRITE = 1 << 3,
     } FileSystemOpenMode;
 
-    typedef uint32_t FileHandle;
+    // typedef uint32_t FileHandle;
+    typedef struct
+    {
+        const char descriptor[10 + 1];
+    } FileHandle;
 
     typedef struct
     {
@@ -40,7 +47,7 @@ extern "C"
     } OmegaFileSystemController_t;
 
     void OmegaFileSystemController_reset_module(OmegaFileSystemController_t *);
-    FileSystemStatus OmegaFileSystemController_open_file(OmegaFileSystemController_t *, FileHandle *, const char *, FileSystemOpenMode);
+    FileSystemStatus OmegaFileSystemController_open_file(OmegaFileSystemController_t *, const FileHandle *, const char *, FileSystemOpenMode);
     FileSystemStatus OmegaFileSystemController_close_file(OmegaFileSystemController_t *, FileHandle);
 
 #ifdef __cplusplus
