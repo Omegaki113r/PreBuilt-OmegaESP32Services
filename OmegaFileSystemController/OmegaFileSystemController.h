@@ -25,10 +25,6 @@ extern "C"
     } FileSystemOpenMode;
 
     typedef uint64_t FileHandle;
-    // typedef struct
-    // {
-    //     const char descriptor[10 + 1];
-    // } FileHandle;
 
     typedef struct
     {
