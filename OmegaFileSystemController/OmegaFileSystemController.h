@@ -6,17 +6,6 @@ extern "C"
 {
 #endif
 
-#include <assert.h>
-#include <errno.h>
-#include <stdbool.h>
-#include <stdint.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <time.h>
-
-#include <esp_log.h>
-
     typedef enum
     {
         SUCCESS,
@@ -35,11 +24,11 @@ extern "C"
         OVERWRITE = 1 << 3,
     } FileSystemOpenMode;
 
-    // typedef uint32_t FileHandle;
-    typedef struct
-    {
-        const char descriptor[10 + 1];
-    } FileHandle;
+    typedef uint64_t FileHandle;
+    // typedef struct
+    // {
+    //     const char descriptor[10 + 1];
+    // } FileHandle;
 
     typedef struct
     {
