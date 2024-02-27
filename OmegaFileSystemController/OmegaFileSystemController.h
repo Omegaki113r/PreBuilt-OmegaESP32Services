@@ -4,7 +4,7 @@
  * File Created: Friday, 23rd February 2024 4:53:37 pm
  * Author: Omegaki113r (omegaki113r@gmail.com)
  * -----
- * Last Modified: Tuesday, 27th February 2024 5:15:07 pm
+ * Last Modified: Wednesday, 28th February 2024 1:04:01 am
  * Modified By: Omegaki113r (omegaki113r@gmail.com>)
  * -----
  * Copyright 2024 - 2024 0m3g4ki113r, Xtronic
@@ -30,15 +30,16 @@ extern "C"
 #endif
     typedef enum
     {
-        SUCCESS,
-        FAILED,
-        INVALID_OPENMODE,
-        FILE_NOT_EXIST,
-        FILE_HANDLE_NOT_EXIST,
-        NO_MEM,
-        END_OF_FILE,
-        UNKNOWN
-    } FileSystemStatus;
+        FSC_SUCCESS,
+        FSC_FAILED,
+        FSC_INVALID_OPENMODE,
+        FSC_INVALID_PARAMETERS,
+        FSC_FILE_NOT_EXIST,
+        FSC_FILE_HANDLE_NOT_EXIST,
+        FSC_NO_MEM,
+        FSC_END_OF_FILE,
+        FSC_UNKNOWN
+    } FileSystemControllerStatus;
 
     typedef enum
     {
@@ -69,10 +70,10 @@ extern "C"
         OmegaFileData_t in_out_data;
     } OmegaFileSystemController_t;
 
-    void OmegaFileSystemController_reset_module(OmegaFileSystemController_t *);
-    FileSystemStatus OmegaFileSystemController_open_file(OmegaFileSystemController_t *, const FileHandle *, const char *, FileSystemOpenMode);
-    FileSystemStatus OmegaFileSystemController_close_file(OmegaFileSystemController_t *, FileHandle);
-    FileSystemStatus OmegaFileSystemController_read_file(OmegaFileSystemController_t *, FileHandle, FileSystemReadMode);
+    void OmegaFileSystemController_init(OmegaFileSystemController_t *);
+    FileSystemControllerStatus OmegaFileSystemController_open_file(OmegaFileSystemController_t *, const FileHandle *, const char *, FileSystemOpenMode);
+    FileSystemControllerStatus OmegaFileSystemController_close_file(OmegaFileSystemController_t *, FileHandle);
+    FileSystemControllerStatus OmegaFileSystemController_read_file(OmegaFileSystemController_t *, FileHandle, FileSystemReadMode);
 #ifdef __cplusplus
 }
 #endif
