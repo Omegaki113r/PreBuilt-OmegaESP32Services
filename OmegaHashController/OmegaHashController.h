@@ -24,6 +24,7 @@ extern "C"
 
 #include <stdio.h>
 #include <string.h>
+#include <stdint.h>
 
 #include <mbedtls/md.h>
 #include <mbedtls/sha256.h>
