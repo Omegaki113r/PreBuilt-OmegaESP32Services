@@ -4,7 +4,7 @@
  * File Created: Friday, 23rd February 2024 4:53:37 pm
  * Author: Omegaki113r (omegaki113r@gmail.com)
  * -----
- * Last Modified: Wednesday, 28th February 2024 1:04:01 am
+ * Last Modified: Thursday, 29th February 2024 1:46:19 am
  * Modified By: Omegaki113r (omegaki113r@gmail.com>)
  * -----
  * Copyright 2024 - 2024 0m3g4ki113r, Xtronic
@@ -13,7 +13,7 @@
  * Date      	By	Comments
  * ----------	---	---------------------------------------------------------
  *
- * 27-02-2024	0m3g4	TODO
+ * 28-02-2024	0m3g4	POSIX on x86/64 and SPIFFS on Xtensa seems to have different notion of <NEWLINE> character     POSIX => \n      SPIFFS => \r\n therefore had to fix that inorder to hash function to work
  *
  * 26-02-2024	0m3g4	basics of the FileSystemController code added
  *
@@ -70,7 +70,7 @@ extern "C"
         OmegaFileData_t in_out_data;
     } OmegaFileSystemController_t;
 
-    void OmegaFileSystemController_init(OmegaFileSystemController_t *);
+    FileSystemControllerStatus OmegaFileSystemController_init(OmegaFileSystemController_t *);
     FileSystemControllerStatus OmegaFileSystemController_open_file(OmegaFileSystemController_t *, const FileHandle *, const char *, FileSystemOpenMode);
     FileSystemControllerStatus OmegaFileSystemController_close_file(OmegaFileSystemController_t *, FileHandle);
     FileSystemControllerStatus OmegaFileSystemController_read_file(OmegaFileSystemController_t *, FileHandle, FileSystemReadMode);
