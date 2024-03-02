@@ -27,7 +27,7 @@
     </tr>
     <tr>
       <th scope="row">Date:</th>
-      <td>2024-03-02 07:14:50</td>
+      <td>2024-03-02 10:09:38</td>
     </tr>
   </table>
 </div>
@@ -41,15 +41,15 @@
     </tr>
     <tr>
       <th scope="row">Lines:</th>
-      <td>0</td>
+      <td>8</td>
       <td>41</td>
-      <td class="coverage-none">0.0%</td>
+      <td class="coverage-low">19.5%</td>
     </tr>
     <tr>
       <th scope="row">Functions:</th>
-      <td>0</td>
+      <td>1</td>
       <td>9</td>
-      <td class="coverage-none">0.0%</td>
+      <td class="coverage-low">11.1%</td>
     </tr>
     <tr>
       <th scope="row">Branches:</th>
@@ -75,7 +75,7 @@
     </tr>
     <tr><td><a href="#l107">crand (line 107)</a></td><td>not called</td><td>0.0%</td></tr>
     <tr><td><a href="#l90">crand_f64 (line 90)</a></td><td>not called</td><td>0.0%</td></tr>
-    <tr><td><a href="#l113">crand_init (line 113)</a></td><td>not called</td><td>0.0%</td></tr>
+    <tr><td><a href="#l113">crand_init (line 113)</a></td><td>called 14 times, returned 14 times</td><td>100.0%</td></tr>
     <tr><td><a href="#l142">crand_normal (line 142)</a></td><td>not called</td><td>0.0%</td></tr>
     <tr><td><a href="#l80">crand_u64 (line 80)</a></td><td>not called</td><td>0.0%</td></tr>
     <tr><td><a href="#l131">crand_uniform (line 131)</a></td><td>not called</td><td>0.0%</td></tr>
@@ -884,57 +884,57 @@
       <td class="lineno"><a id="l113" href="#l113">113</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="n">STC_DEF</span><span class="w"> </span><span class="n">crand_t</span><span class="w"> </span><span class="n">crand_init</span><span class="p">(</span><span class="kt">uint64_t</span><span class="w"> </span><span class="n">seed</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
+      <td class="linecount coveredLine">14</td>
+      <td class="src coveredLine"><span class="n">STC_DEF</span><span class="w"> </span><span class="n">crand_t</span><span class="w"> </span><span class="n">crand_init</span><span class="p">(</span><span class="kt">uint64_t</span><span class="w"> </span><span class="n">seed</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l114" href="#l114">114</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">    </span><span class="n">crand_t</span><span class="w"> </span><span class="n">rng</span><span class="p">;</span><span class="w"> </span><span class="kt">uint64_t</span><span class="o">*</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rng</span><span class="p">.</span><span class="n">state</span><span class="p">;</span></td>
+      <td class="linecount coveredLine">14</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="n">crand_t</span><span class="w"> </span><span class="n">rng</span><span class="p">;</span><span class="w"> </span><span class="kt">uint64_t</span><span class="o">*</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rng</span><span class="p">.</span><span class="n">state</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l115" href="#l115">115</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">    </span><span class="n">s</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">seed</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mh">0x9e3779b97f4a7c15</span><span class="p">;</span></td>
+      <td class="linecount coveredLine">14</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="n">s</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">seed</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mh">0x9e3779b97f4a7c15</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l116" href="#l116">116</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">    </span><span class="n">s</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">^</span><span class="w"> </span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="mi">30</span><span class="p">))</span><span class="o">*</span><span class="mh">0xbf58476d1ce4e5b9</span><span class="p">;</span></td>
+      <td class="linecount coveredLine">14</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="n">s</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">^</span><span class="w"> </span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="mi">30</span><span class="p">))</span><span class="o">*</span><span class="mh">0xbf58476d1ce4e5b9</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l117" href="#l117">117</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">    </span><span class="n">s</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">^</span><span class="w"> </span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="mi">27</span><span class="p">))</span><span class="o">*</span><span class="mh">0x94d049bb133111eb</span><span class="p">;</span></td>
+      <td class="linecount coveredLine">14</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="n">s</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">^</span><span class="w"> </span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="mi">27</span><span class="p">))</span><span class="o">*</span><span class="mh">0x94d049bb133111eb</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l118" href="#l118">118</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">    </span><span class="n">s</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">s</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">^</span><span class="w"> </span><span class="n">s</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="w"> </span><span class="o">^</span><span class="w"> </span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="mi">31</span><span class="p">);</span></td>
+      <td class="linecount coveredLine">14</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="n">s</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">s</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">^</span><span class="w"> </span><span class="n">s</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="w"> </span><span class="o">^</span><span class="w"> </span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="mi">31</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l119" href="#l119">119</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">    </span><span class="n">s</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">seed</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span></td>
+      <td class="linecount coveredLine">14</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="n">s</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">seed</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l120" href="#l120">120</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">rng</span><span class="p">;</span></td>
+      <td class="linecount coveredLine">14</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">rng</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l121" href="#l121">121</a></td>

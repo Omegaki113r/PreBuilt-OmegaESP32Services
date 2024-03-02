@@ -27,7 +27,7 @@
     </tr>
     <tr>
       <th scope="row">Date:</th>
-      <td>2024-03-02 07:14:50</td>
+      <td>2024-03-02 10:09:38</td>
     </tr>
   </table>
 </div>
@@ -41,21 +41,21 @@
     </tr>
     <tr>
       <th scope="row">Lines:</th>
-      <td>0</td>
+      <td>5</td>
       <td>229</td>
-      <td class="coverage-none">0.0%</td>
+      <td class="coverage-low">2.2%</td>
     </tr>
     <tr>
       <th scope="row">Functions:</th>
-      <td>0</td>
+      <td>2</td>
       <td>26</td>
-      <td class="coverage-none">0.0%</td>
+      <td class="coverage-low">7.7%</td>
     </tr>
     <tr>
       <th scope="row">Branches:</th>
-      <td>0</td>
+      <td>1</td>
       <td>92</td>
-      <td class="coverage-none">0.0%</td>
+      <td class="coverage-low">1.1%</td>
     </tr>
   </table>
 </div>
@@ -77,7 +77,7 @@
     <tr><td><a href="#l283">smap_uint64_t_begin (line 283)</a></td><td>not called</td><td>0.0%</td></tr>
     <tr><td><a href="#l561">smap_uint64_t_clone (line 561)</a></td><td>not called</td><td>0.0%</td></tr>
     <tr><td><a href="#l550">smap_uint64_t_clone_r_ (line 550)</a></td><td>not called</td><td>0.0%</td></tr>
-    <tr><td><a href="#l592">smap_uint64_t_drop (line 592)</a></td><td>not called</td><td>0.0%</td></tr>
+    <tr><td><a href="#l592">smap_uint64_t_drop (line 592)</a></td><td>called 14 times, returned 14 times</td><td>50.0%</td></tr>
     <tr><td><a href="#l583">smap_uint64_t_drop_r_ (line 583)</a></td><td>not called</td><td>0.0%</td></tr>
     <tr><td><a href="#l505">smap_uint64_t_erase (line 505)</a></td><td>not called</td><td>0.0%</td></tr>
     <tr><td><a href="#l516">smap_uint64_t_erase_at (line 516)</a></td><td>not called</td><td>0.0%</td></tr>
@@ -85,7 +85,7 @@
     <tr><td><a href="#l529">smap_uint64_t_erase_range (line 529)</a></td><td>not called</td><td>0.0%</td></tr>
     <tr><td><a href="#l372">smap_uint64_t_find_it (line 372)</a></td><td>not called</td><td>0.0%</td></tr>
     <tr><td><a href="#l308">smap_uint64_t_front (line 308)</a></td><td>not called</td><td>0.0%</td></tr>
-    <tr><td><a href="#l115">smap_uint64_t_init (line 115)</a></td><td>not called</td><td>0.0%</td></tr>
+    <tr><td><a href="#l115">smap_uint64_t_init (line 115)</a></td><td>called 14 times, returned 14 times</td><td>100.0%</td></tr>
     <tr><td><a href="#l227">smap_uint64_t_insert (line 227)</a></td><td>not called</td><td>0.0%</td></tr>
     <tr><td><a href="#l456">smap_uint64_t_insert_entry_ (line 456)</a></td><td>not called</td><td>0.0%</td></tr>
     <tr><td><a href="#l424">smap_uint64_t_insert_entry_i_ (line 424)</a></td><td>not called</td><td>0.0%</td></tr>
@@ -915,8 +915,8 @@
       <td class="lineno"><a id="l115" href="#l115">115</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="n">STC_INLINE</span><span class="w"> </span><span class="n">i_type</span><span class="w">       </span><span class="n">_c_MEMB</span><span class="p">(</span><span class="n">_init</span><span class="p">)(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">i_type</span><span class="w"> </span><span class="n">tree</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="mi">0</span><span class="p">};</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">tree</span><span class="p">;</span><span class="w"> </span><span class="p">}</span></td>
+      <td class="linecount coveredLine">14</td>
+      <td class="src coveredLine"><span class="n">STC_INLINE</span><span class="w"> </span><span class="n">i_type</span><span class="w">       </span><span class="n">_c_MEMB</span><span class="p">(</span><span class="n">_init</span><span class="p">)(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">i_type</span><span class="w"> </span><span class="n">tree</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="mi">0</span><span class="p">};</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">tree</span><span class="p">;</span><span class="w"> </span><span class="p">}</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l116" href="#l116">116</a></td>
@@ -4254,22 +4254,29 @@
       <td class="lineno"><a id="l592" href="#l592">592</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="n">_c_MEMB</span><span class="p">(</span><span class="n">_drop</span><span class="p">)(</span><span class="k">const</span><span class="w"> </span><span class="n">i_type</span><span class="o">*</span><span class="w"> </span><span class="n">cself</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
+      <td class="linecount coveredLine">14</td>
+      <td class="src coveredLine"><span class="n">_c_MEMB</span><span class="p">(</span><span class="n">_drop</span><span class="p">)(</span><span class="k">const</span><span class="w"> </span><span class="n">i_type</span><span class="o">*</span><span class="w"> </span><span class="n">cself</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l593" href="#l593">593</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">    </span><span class="n">i_type</span><span class="o">*</span><span class="w"> </span><span class="n">self</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">i_type</span><span class="o">*</span><span class="p">)</span><span class="n">cself</span><span class="p">;</span></td>
+      <td class="linecount coveredLine">14</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="n">i_type</span><span class="o">*</span><span class="w"> </span><span class="n">self</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">i_type</span><span class="o">*</span><span class="p">)</span><span class="n">cself</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l594" href="#l594">594</a></td>
       <td class="linebranch">
+        <details class="linebranchDetails">
+        <summary class="linebranchSummary">1/2</summary>
+        <div class="linebranchContents">
+          <div class="notTakenBranch">&cross; Branch 0 not taken.</div>
+          <div class="takenBranch">&check; Branch 1 taken 14 times.</div>
+        </div>
+        </details>
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">self</span><span class="o">-&gt;</span><span class="n">cap</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
+      <td class="linecount partialCoveredLine">14</td>
+      <td class="src partialCoveredLine"><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">self</span><span class="o">-&gt;</span><span class="n">cap</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l595" href="#l595">595</a></td>
@@ -4296,8 +4303,8 @@
       <td class="lineno"><a id="l598" href="#l598">598</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="p">}</span></td>
+      <td class="linecount coveredLine">14</td>
+      <td class="src coveredLine"><span class="p">}</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l599" href="#l599">599</a></td>
