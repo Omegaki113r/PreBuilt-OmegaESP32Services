@@ -4,14 +4,16 @@
  * File Created: Thursday, 22nd February 2024 4:42:02 pm
  * Author: Omegaki113r (omegaki113r@gmail.com)
  * -----
- * Last Modified: Thursday, 29th February 2024 1:28:47 am
- * Modified By: Omegaki113r (omegaki113r@gmail.com>)
+ * Last Modified: Saturday, 2nd March 2024 6:04:54 am
+ * Modified By: Chameera Subasinghe (omegaki113r@gmail.com>)
  * -----
  * Copyright 2024 - 2024 0m3g4ki113r, Xtronic
  * -----
  * HISTORY:
  * Date      	By	Comments
  * ----------	---	---------------------------------------------------------
+ *
+ * 02-03-2024	0m3g4	added hash algorithm HSC_HASH_ALGO_NOT_SUPPORTED
  */
 
 #ifndef __OMEGA_HASH_CONTROLLER__
@@ -35,6 +37,7 @@ extern "C"
         HSC_FAILED,
         HSC_INVALID_PARAMETERS,
         HSC_HASH_ALGO_NOT_FOUND,
+        HSC_HASH_ALGO_NOT_SUPPORTED,
         HSC_NO_MEM,
         HSC_UNKNOWN
     } HashControllerStatus;
