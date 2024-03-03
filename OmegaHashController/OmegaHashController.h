@@ -1,11 +1,17 @@
+/**
+ * @file OmegaHashController.h
+ * @author Chameera Subasinghe
+ * @date Friday, 1st March 2024 2:30:46 am
+ * @copyright Copyright 2024 - 2024 0m3g4ki113r, Xtronic
+ * */
 /*
  * Project: OmegaESP32Services
  * File Name: OmegaHashController.h
- * File Created: Thursday, 22nd February 2024 4:42:02 pm
- * Author: Omegaki113r (omegaki113r@gmail.com)
+ * File Created: Friday, 1st March 2024 2:30:46 am
+ * Author: Chameera Subasinghe (omegaki113r@gmail.com)
  * -----
- * Last Modified: Saturday, 2nd March 2024 6:04:54 am
- * Modified By: Chameera Subasinghe (omegaki113r@gmail.com>)
+ * Last Modified: Saturday, 2nd March 2024 4:38:19 pm
+ * Modified By: Chameera Subasinghe (omegaki113r@gmail.com)
  * -----
  * Copyright 2024 - 2024 0m3g4ki113r, Xtronic
  * -----
@@ -35,6 +41,10 @@ extern "C"
     {
         HSC_SUCCESS,
         HSC_FAILED,
+        /**
+         * @brief mapped to MBEDTLS_ERR_MD_BAD_INPUT_DATA of mbedtls
+         *
+         */
         HSC_INVALID_PARAMETERS,
         HSC_HASH_ALGO_NOT_FOUND,
         HSC_HASH_ALGO_NOT_SUPPORTED,
