@@ -1,0 +1,79 @@
+\hypertarget{OmegaHashController_8h}{}\doxysection{/home/om3gaki113r/\+Documents/\+A\+R\+C\+S\+I\+A/\+Omega\+E\+S\+P32\+Services/\+\_\+\+\_\+\+External/\+Pre\+Built-\/\+Omega\+E\+S\+P32\+Services/\+Omega\+Hash\+Controller/\+Omega\+Hash\+Controller.h File Reference}
+\label{OmegaHashController_8h}\index{/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/\_\_External/PreBuilt-\/OmegaESP32Services/OmegaHashController/OmegaHashController.h@{/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/\_\_External/PreBuilt-\/OmegaESP32Services/OmegaHashController/OmegaHashController.h}}
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$mbedtls/md.\+h$>$}\newline
+{\ttfamily \#include $<$mbedtls/sha256.\+h$>$}\newline
+Include dependency graph for Omega\+Hash\+Controller.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{OmegaHashController_8h__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structOmegaHashController__t}{Omega\+Hash\+Controller\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{OmegaHashController_8h_a5b6f8a4106c6eb4827afef40ec1b2417}{Hash\+Controller\+Status}} \{ \newline
+{\bfseries H\+S\+C\+\_\+\+S\+U\+C\+C\+E\+SS}, 
+{\bfseries H\+S\+C\+\_\+\+F\+A\+I\+L\+ED}, 
+\mbox{\hyperlink{OmegaHashController_8h_a5b6f8a4106c6eb4827afef40ec1b2417a7308d0dcc794d42fdd44d4beb2dc62b2}{H\+S\+C\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+R\+A\+M\+E\+T\+E\+RS}}, 
+{\bfseries H\+S\+C\+\_\+\+H\+A\+S\+H\+\_\+\+A\+L\+G\+O\+\_\+\+N\+O\+T\+\_\+\+F\+O\+U\+ND}, 
+\newline
+{\bfseries H\+S\+C\+\_\+\+H\+A\+S\+H\+\_\+\+A\+L\+G\+O\+\_\+\+N\+O\+T\+\_\+\+S\+U\+P\+P\+O\+R\+T\+ED}, 
+{\bfseries H\+S\+C\+\_\+\+N\+O\+\_\+\+M\+EM}, 
+{\bfseries H\+S\+C\+\_\+\+U\+N\+K\+N\+O\+WN}
+ \}
+\item 
+\mbox{\Hypertarget{OmegaHashController_8h_ac7eb238362294fe929ac5b0c199672bb}\label{OmegaHashController_8h_ac7eb238362294fe929ac5b0c199672bb}} 
+enum {\bfseries Hash\+Algorithm} \{ {\bfseries H\+A\+S\+H256}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{OmegaHashController_8h_ac44f19b3457c95c1d20fae5ab07f9fe1}\label{OmegaHashController_8h_ac44f19b3457c95c1d20fae5ab07f9fe1}} 
+\mbox{\hyperlink{OmegaHashController_8h_a5b6f8a4106c6eb4827afef40ec1b2417}{Hash\+Controller\+Status}} {\bfseries Omega\+Hash\+Controller\+\_\+init} (\mbox{\hyperlink{structOmegaHashController__t}{Omega\+Hash\+Controller\+\_\+t}} $\ast$, Hash\+Algorithm)
+\item 
+\mbox{\Hypertarget{OmegaHashController_8h_a6de4fcf6a10ec74d8aeeb02635862686}\label{OmegaHashController_8h_a6de4fcf6a10ec74d8aeeb02635862686}} 
+\mbox{\hyperlink{OmegaHashController_8h_a5b6f8a4106c6eb4827afef40ec1b2417}{Hash\+Controller\+Status}} {\bfseries Omega\+Hash\+Controller\+\_\+reset} (\mbox{\hyperlink{structOmegaHashController__t}{Omega\+Hash\+Controller\+\_\+t}} $\ast$)
+\item 
+\mbox{\Hypertarget{OmegaHashController_8h_a93a37540df1840302f6f578b7a02a468}\label{OmegaHashController_8h_a93a37540df1840302f6f578b7a02a468}} 
+\mbox{\hyperlink{OmegaHashController_8h_a5b6f8a4106c6eb4827afef40ec1b2417}{Hash\+Controller\+Status}} {\bfseries Omega\+Hash\+Controller\+\_\+ingest\+\_\+data\+\_\+single} (\mbox{\hyperlink{structOmegaHashController__t}{Omega\+Hash\+Controller\+\_\+t}} $\ast$, const uint8\+\_\+t $\ast$, const size\+\_\+t, uint8\+\_\+t $\ast$)
+\item 
+\mbox{\Hypertarget{OmegaHashController_8h_ae2058597fd678c9cb1f0784706629fdc}\label{OmegaHashController_8h_ae2058597fd678c9cb1f0784706629fdc}} 
+\mbox{\hyperlink{OmegaHashController_8h_a5b6f8a4106c6eb4827afef40ec1b2417}{Hash\+Controller\+Status}} {\bfseries Omega\+Hash\+Controller\+\_\+ingest\+\_\+data\+\_\+streamed} (\mbox{\hyperlink{structOmegaHashController__t}{Omega\+Hash\+Controller\+\_\+t}} $\ast$, const uint8\+\_\+t $\ast$, const size\+\_\+t, uint8\+\_\+t $\ast$out\+\_\+buffer)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Chameera Subasinghe 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Friday, 1st March 2024 2\+:30\+:46 am 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright 2024 -\/ 2024 0m3g4ki113r, Xtronic 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{OmegaHashController_8h_a5b6f8a4106c6eb4827afef40ec1b2417}\label{OmegaHashController_8h_a5b6f8a4106c6eb4827afef40ec1b2417}} 
+\index{OmegaHashController.h@{OmegaHashController.h}!HashControllerStatus@{HashControllerStatus}}
+\index{HashControllerStatus@{HashControllerStatus}!OmegaHashController.h@{OmegaHashController.h}}
+\doxysubsubsection{\texorpdfstring{HashControllerStatus}{HashControllerStatus}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{OmegaHashController_8h_a5b6f8a4106c6eb4827afef40ec1b2417}{Hash\+Controller\+Status}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HSC\_INVALID\_PARAMETERS@{HSC\_INVALID\_PARAMETERS}!OmegaHashController.h@{OmegaHashController.h}}\index{OmegaHashController.h@{OmegaHashController.h}!HSC\_INVALID\_PARAMETERS@{HSC\_INVALID\_PARAMETERS}}}\mbox{\Hypertarget{OmegaHashController_8h_a5b6f8a4106c6eb4827afef40ec1b2417a7308d0dcc794d42fdd44d4beb2dc62b2}\label{OmegaHashController_8h_a5b6f8a4106c6eb4827afef40ec1b2417a7308d0dcc794d42fdd44d4beb2dc62b2}} 
+H\+S\+C\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+R\+A\+M\+E\+T\+E\+RS&mapped to M\+B\+E\+D\+T\+L\+S\+\_\+\+E\+R\+R\+\_\+\+M\+D\+\_\+\+B\+A\+D\+\_\+\+I\+N\+P\+U\+T\+\_\+\+D\+A\+TA of mbedtls \\
+\hline
+
+\end{DoxyEnumFields}
