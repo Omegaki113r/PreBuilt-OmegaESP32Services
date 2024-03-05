@@ -27,7 +27,7 @@
     </tr>
     <tr>
       <th scope="row">Date:</th>
-      <td>2024-03-05 09:23:52</td>
+      <td>2024-03-05 09:42:18</td>
     </tr>
   </table>
 </div>
@@ -41,8 +41,8 @@
     </tr>
     <tr>
       <th scope="row">Lines:</th>
-      <td>44</td>
-      <td>44</td>
+      <td>48</td>
+      <td>48</td>
       <td class="coverage-high">100.0%</td>
     </tr>
     <tr>
@@ -74,8 +74,8 @@
       <th>Block coverage</th>
     </tr>
     <tr><td><a href="#l32">main (line 32)</a></td><td>called 3 times, returned 3 times</td><td>100.0%</td></tr>
-    <tr><td><a href="#l24">setUp (line 24)</a></td><td>called 111 times, returned 111 times</td><td>100.0%</td></tr>
-    <tr><td><a href="#l28">tearDown (line 28)</a></td><td>called 111 times, returned 111 times</td><td>100.0%</td></tr>
+    <tr><td><a href="#l24">setUp (line 24)</a></td><td>called 123 times, returned 123 times</td><td>100.0%</td></tr>
+    <tr><td><a href="#l28">tearDown (line 28)</a></td><td>called 123 times, returned 123 times</td><td>100.0%</td></tr>
   </table>
 </details>
 
@@ -255,7 +255,7 @@
       <td class="lineno"><a id="l24" href="#l24">24</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">111</td>
+      <td class="linecount coveredLine">123</td>
       <td class="src coveredLine"><span class="kt">void</span><span class="w"> </span><span class="nf">setUp</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span></td>
     </tr>
     <tr class="source-line">
@@ -269,7 +269,7 @@
       <td class="lineno"><a id="l26" href="#l26">26</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">111</td>
+      <td class="linecount coveredLine">123</td>
       <td class="src coveredLine"><span class="p">}</span></td>
     </tr>
     <tr class="source-line">
@@ -283,7 +283,7 @@
       <td class="lineno"><a id="l28" href="#l28">28</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">111</td>
+      <td class="linecount coveredLine">123</td>
       <td class="src coveredLine"><span class="kt">void</span><span class="w"> </span><span class="nf">tearDown</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span></td>
     </tr>
     <tr class="source-line">
@@ -297,7 +297,7 @@
       <td class="lineno"><a id="l30" href="#l30">30</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">111</td>
+      <td class="linecount coveredLine">123</td>
       <td class="src coveredLine"><span class="p">}</span></td>
     </tr>
     <tr class="source-line">
@@ -592,31 +592,59 @@
       <td class="linebranch">
       </td>
       <td class="linecount coveredLine">3</td>
-      <td class="src coveredLine"><span class="w">    </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_controllerNOFILEOPENREAD_FileSystemController_open_file</span><span class="p">);</span></td>
+      <td class="src coveredLine"><span class="w">    </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_NOFILEOPENREAD_FileSystemController_open_file</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l73" href="#l73">73</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount coveredLine">3</td>
-      <td class="src coveredLine"><span class="w">    </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_controllerFILEOPENREAD_FileSystemController_open_file</span><span class="p">);</span></td>
+      <td class="src coveredLine"><span class="w">    </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_FILEOPENREAD_FileSystemController_open_file</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l74" href="#l74">74</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount coveredLine">3</td>
-      <td class="src coveredLine"><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">UNITY_END</span><span class="p">();</span></td>
+      <td class="src coveredLine"><span class="w">    </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_OVERWRITEWRITE_FileSystemController_open_file</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l75" href="#l75">75</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount coveredLine">3</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_APPENDWRITE_FileSystemController_open_file</span><span class="p">);</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l76" href="#l76">76</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount coveredLine">3</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_APPENDREADWRITE_FileSystemController_open_file</span><span class="p">);</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l77" href="#l77">77</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount coveredLine">3</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="n">RUN_TEST</span><span class="p">(</span><span class="n">test_OVERWRITERREADWRITE_FileSystemController_open_file</span><span class="p">);</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l78" href="#l78">78</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount coveredLine">3</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">UNITY_END</span><span class="p">();</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l79" href="#l79">79</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
       <td class="src "><span class="p">}</span></td>
     </tr>
     <tr class="source-line">
-      <td class="lineno"><a id="l76" href="#l76">76</a></td>
+      <td class="lineno"><a id="l80" href="#l80">80</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>

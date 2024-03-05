@@ -51,8 +51,12 @@
     <member refid="OmegaFileSystemController_8test_8h_1a4dac7d85d5a0f4f2fadd7871c60f3dee" kind="function"><name>test_filenameNULL_FileSystemController_open_file</name></member>
     <member refid="OmegaFileSystemController_8test_8h_1a54bd0692f8404cb1fa8277ddb3f8b3d3" kind="function"><name>test_open_modeINVALID_FileSystemController_open_file</name></member>
     <member refid="OmegaFileSystemController_8test_8h_1afd989a4ad4c81b22ff8093477a589f5c" kind="function"><name>test_controllerNOTINIT_FileSystemController_open_file</name></member>
-    <member refid="OmegaFileSystemController_8test_8h_1a262f8122729a9df1080378d8e8e005a8" kind="function"><name>test_controllerNOFILEOPENREAD_FileSystemController_open_file</name></member>
-    <member refid="OmegaFileSystemController_8test_8h_1a02effa6f664208e0ad6937a39934f764" kind="function"><name>test_controllerFILEOPENREAD_FileSystemController_open_file</name></member>
+    <member refid="OmegaFileSystemController_8test_8h_1a98b2ca4e34088d60220d36d4d2d5a54d" kind="function"><name>test_NOFILEOPENREAD_FileSystemController_open_file</name></member>
+    <member refid="OmegaFileSystemController_8test_8h_1ab6902b00d3c59ce2163ee58d09dcef65" kind="function"><name>test_FILEOPENREAD_FileSystemController_open_file</name></member>
+    <member refid="OmegaFileSystemController_8test_8h_1a5ffab78bebea4c3f715626a2a018aa61" kind="function"><name>test_OVERWRITEWRITE_FileSystemController_open_file</name></member>
+    <member refid="OmegaFileSystemController_8test_8h_1afa1c9e2863ab6b1f7e5c6f480aad7b34" kind="function"><name>test_APPENDWRITE_FileSystemController_open_file</name></member>
+    <member refid="OmegaFileSystemController_8test_8h_1a82651cf7a8bcf58b8739973f931c5f74" kind="function"><name>test_APPENDREADWRITE_FileSystemController_open_file</name></member>
+    <member refid="OmegaFileSystemController_8test_8h_1ac8568975c9e22903645b22d7eec3d3de" kind="function"><name>test_OVERWRITERREADWRITE_FileSystemController_open_file</name></member>
   </compound>
   <compound refid="OmegaHashController_8h" kind="file"><name>OmegaHashController.h</name>
     <member refid="OmegaHashController_8h_1a5b6f8a4106c6eb4827afef40ec1b2417" kind="enum"><name>HashControllerStatus</name></member>

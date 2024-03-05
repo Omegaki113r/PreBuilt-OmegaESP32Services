@@ -163,11 +163,11 @@
         </inbodydescription>
         <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/tests/OmegaFileSystemController.test.h" line="34" column="10" declfile="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/tests/OmegaFileSystemController.test.h" declline="34" declcolumn="10"/>
       </memberdef>
-      <memberdef kind="function" id="OmegaFileSystemController_8test_8h_1a262f8122729a9df1080378d8e8e005a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="OmegaFileSystemController_8test_8h_1a98b2ca4e34088d60220d36d4d2d5a54d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void test_controllerNOFILEOPENREAD_FileSystemController_open_file</definition>
+        <definition>void test_NOFILEOPENREAD_FileSystemController_open_file</definition>
         <argsstring>(void)</argsstring>
-        <name>test_controllerNOFILEOPENREAD_FileSystemController_open_file</name>
+        <name>test_NOFILEOPENREAD_FileSystemController_open_file</name>
         <param>
           <type>void</type>
         </param>
@@ -179,11 +179,11 @@
         </inbodydescription>
         <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/tests/OmegaFileSystemController.test.h" line="35" column="10" declfile="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/tests/OmegaFileSystemController.test.h" declline="35" declcolumn="10"/>
       </memberdef>
-      <memberdef kind="function" id="OmegaFileSystemController_8test_8h_1a02effa6f664208e0ad6937a39934f764" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="OmegaFileSystemController_8test_8h_1ab6902b00d3c59ce2163ee58d09dcef65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void test_controllerFILEOPENREAD_FileSystemController_open_file</definition>
+        <definition>void test_FILEOPENREAD_FileSystemController_open_file</definition>
         <argsstring>(void)</argsstring>
-        <name>test_controllerFILEOPENREAD_FileSystemController_open_file</name>
+        <name>test_FILEOPENREAD_FileSystemController_open_file</name>
         <param>
           <type>void</type>
         </param>
@@ -194,6 +194,70 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/tests/OmegaFileSystemController.test.h" line="36" column="10" declfile="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/tests/OmegaFileSystemController.test.h" declline="36" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="OmegaFileSystemController_8test_8h_1a5ffab78bebea4c3f715626a2a018aa61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void test_OVERWRITEWRITE_FileSystemController_open_file</definition>
+        <argsstring>(void)</argsstring>
+        <name>test_OVERWRITEWRITE_FileSystemController_open_file</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/tests/OmegaFileSystemController.test.h" line="37" column="10" declfile="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/tests/OmegaFileSystemController.test.h" declline="37" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="OmegaFileSystemController_8test_8h_1afa1c9e2863ab6b1f7e5c6f480aad7b34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void test_APPENDWRITE_FileSystemController_open_file</definition>
+        <argsstring>(void)</argsstring>
+        <name>test_APPENDWRITE_FileSystemController_open_file</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/tests/OmegaFileSystemController.test.h" line="38" column="10" declfile="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/tests/OmegaFileSystemController.test.h" declline="38" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="OmegaFileSystemController_8test_8h_1a82651cf7a8bcf58b8739973f931c5f74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void test_APPENDREADWRITE_FileSystemController_open_file</definition>
+        <argsstring>(void)</argsstring>
+        <name>test_APPENDREADWRITE_FileSystemController_open_file</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/tests/OmegaFileSystemController.test.h" line="39" column="10" declfile="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/tests/OmegaFileSystemController.test.h" declline="39" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="OmegaFileSystemController_8test_8h_1ac8568975c9e22903645b22d7eec3d3de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void test_OVERWRITERREADWRITE_FileSystemController_open_file</definition>
+        <argsstring>(void)</argsstring>
+        <name>test_OVERWRITERREADWRITE_FileSystemController_open_file</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/tests/OmegaFileSystemController.test.h" line="40" column="10" declfile="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/tests/OmegaFileSystemController.test.h" declline="40" declcolumn="10"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -235,13 +299,17 @@
 <codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>test_filenameNULL_FileSystemController_open_file(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>test_open_modeINVALID_FileSystemController_open_file(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>test_controllerNOTINIT_FileSystemController_open_file(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>test_controllerNOFILEOPENREAD_FileSystemController_open_file(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>test_controllerFILEOPENREAD_FileSystemController_open_file(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="40"><highlight class="normal"></highlight></codeline>
-<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>test_NOFILEOPENREAD_FileSystemController_open_file(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>test_FILEOPENREAD_FileSystemController_open_file(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>test_OVERWRITEWRITE_FileSystemController_open_file(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>test_APPENDWRITE_FileSystemController_open_file(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>test_APPENDREADWRITE_FileSystemController_open_file(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>test_OVERWRITERREADWRITE_FileSystemController_open_file(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/tests/OmegaFileSystemController.test.h"/>
   </compounddef>
