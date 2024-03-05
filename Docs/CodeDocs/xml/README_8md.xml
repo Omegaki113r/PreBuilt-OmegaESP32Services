@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="README_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>OmegaESP32Services</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">sfsadfsdfasdasdasdasdasdasdasdasda</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">&gt;<sp/>gcovr<sp/>--gcov-ignore-errors=no_working_dir_found<sp/>--html-nested<sp/>coverage/coverage.html</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">&gt;<sp/>gprof<sp/>./bin/software-integration-tests<sp/>gmon.out<sp/>|<sp/>gprof2dot<sp/>-s<sp/>-w<sp/>|<sp/>dot<sp/>-Gdpi=300<sp/>-Tpng<sp/>-o<sp/>output.png</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[MD<sp/>editor](https://pandao.github.io/editor.md/en.html<sp/>&quot;MD<sp/>editor&quot;)</highlight></codeline>
+    </programlisting>
+    <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/README.md"/>
+  </compounddef>
+</doxygen>

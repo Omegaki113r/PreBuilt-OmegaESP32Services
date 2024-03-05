@@ -1,0 +1,450 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="OmegaHashController_8h" kind="file" language="C++">
+    <compoundname>OmegaHashController.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">string.h</includes>
+    <includes local="no">mbedtls/md.h</includes>
+    <includes local="no">mbedtls/sha256.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>stdint.h</label>
+      </node>
+      <node id="5">
+        <label>mbedtls/md.h</label>
+      </node>
+      <node id="4">
+        <label>string.h</label>
+      </node>
+      <node id="1">
+        <label>/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaHashController/inc/OmegaHashController.h</label>
+        <link refid="OmegaHashController_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>mbedtls/sha256.h</label>
+      </node>
+      <node id="3">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structOmegaHashController__t" prot="public">OmegaHashController_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="OmegaHashController_8h_1a5b6f8a4106c6eb4827afef40ec1b2417" prot="public" static="no" strong="no">
+        <type></type>
+        <name>HashControllerStatus</name>
+        <enumvalue id="OmegaHashController_8h_1a5b6f8a4106c6eb4827afef40ec1b2417a1b9d3d3d67a04553bb2c8737a362b2b1" prot="public">
+          <name>HSC_SUCCESS</name>
+          <briefdescription>
+<para>Indicates success in any operation related to HashController. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="OmegaHashController_8h_1a5b6f8a4106c6eb4827afef40ec1b2417a3b80d8bf60acb49aa3c5f066a4e38031" prot="public">
+          <name>HSC_FAILED</name>
+          <briefdescription>
+<para>Indicates failure in any operation related to HashController. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="OmegaHashController_8h_1a5b6f8a4106c6eb4827afef40ec1b2417a7308d0dcc794d42fdd44d4beb2dc62b2" prot="public">
+          <name>HSC_INVALID_PARAMETERS</name>
+          <briefdescription>
+<para>Indicates failure due to invalid parameters provided to functions/sub-routines and/or structures. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="OmegaHashController_8h_1a5b6f8a4106c6eb4827afef40ec1b2417ab8120df39299da6f4280dac49bf2626c" prot="public">
+          <name>HSC_HASH_ALGO_NOT_FOUND</name>
+          <briefdescription>
+<para>Indicates that provided HashAlgorithm parameter in <computeroutput>OmegaHashController_init</computeroutput> is not valid. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="OmegaHashController_8h_1a5b6f8a4106c6eb4827afef40ec1b2417a2d16357521322f6ec70d3c5626a15ea4" prot="public">
+          <name>HSC_HASH_ALGO_NOT_SUPPORTED</name>
+          <briefdescription>
+<para>Indicates that API is trying to use unsupported hash algorithms. mbedtls supports many hash algorithms [described inside <computeroutput>mbedtls_md_type_t</computeroutput>]. But this controller only supports SHA256 as of 2024-03-03. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="OmegaHashController_8h_1a5b6f8a4106c6eb4827afef40ec1b2417a70fb1f8d7f93726a15cc88f5aa179a14" prot="public">
+          <name>HSC_NO_MEM</name>
+          <briefdescription>
+<para>Indicate that there is not enough Heap/Stack memory to allocate for the necessary operations. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="OmegaHashController_8h_1a5b6f8a4106c6eb4827afef40ec1b2417afa0ba3a7286b277545b752ab9461c81a" prot="public">
+          <name>HSC_UNKNOWN</name>
+          <briefdescription>
+<para>Indicates Unknown error has occured. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>ReturnTypes/StatusCodes for the Hash Controller. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaHashController/inc/OmegaHashController.h" line="44" column="5" bodyfile="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaHashController/inc/OmegaHashController.h" bodystart="43" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="enum" id="OmegaHashController_8h_1ac7eb238362294fe929ac5b0c199672bb" prot="public" static="no" strong="no">
+        <type></type>
+        <name>HashAlgorithm</name>
+        <enumvalue id="OmegaHashController_8h_1ac7eb238362294fe929ac5b0c199672bba4fa568b441da9fd81063a64528f4b679" prot="public">
+          <name>HASH256</name>
+          <briefdescription>
+<para>abstraction for <computeroutput>MBEDTLS_MD_SHA256</computeroutput> inside md.h <computeroutput>mbedtls_md_type_t</computeroutput> </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Hash Algorithms that are supported by Hash Controller. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaHashController/inc/OmegaHashController.h" line="68" column="5" bodyfile="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaHashController/inc/OmegaHashController.h" bodystart="67" bodyend="71"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="OmegaHashController_8h_1a653dce9fca7a2ff090c26f760c8aaed2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="OmegaHashController_8h_1a5b6f8a4106c6eb4827afef40ec1b2417" kindref="member">HashControllerStatus</ref></type>
+        <definition>HashControllerStatus OmegaHashController_init</definition>
+        <argsstring>(OmegaHashController_t *in_controller, HashAlgorithm in_hash_algorithm)</argsstring>
+        <name>OmegaHashController_init</name>
+        <param>
+          <type><ref refid="structOmegaHashController__t" kindref="compound">OmegaHashController_t</ref> *</type>
+          <declname>in_controller</declname>
+        </param>
+        <param>
+          <type><ref refid="OmegaHashController_8h_1ac7eb238362294fe929ac5b0c199672bb" kindref="member">HashAlgorithm</ref></type>
+          <declname>in_hash_algorithm</declname>
+        </param>
+        <briefdescription>
+<para>Initialize and allocate required memory for the specified hash algorithm for the HashController instance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>in_controller</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input parameter. Instance of the <computeroutput><ref refid="structOmegaHashController__t" kindref="compound">OmegaHashController_t</ref></computeroutput> that needs to be initialized. Cannot be <computeroutput>NULL</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>in_hash_algorithm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input parameter. Indicates the hash algorithm that is going to be used by this instance of HashController </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>HashControllerStatus HSC_SUCCESS if <computeroutput><ref refid="structOmegaHashController__t" kindref="compound">OmegaHashController_t</ref></computeroutput> initialized successfully. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaHashController/inc/OmegaHashController.h" line="87" column="26" declfile="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaHashController/inc/OmegaHashController.h" declline="87" declcolumn="26"/>
+      </memberdef>
+      <memberdef kind="function" id="OmegaHashController_8h_1a8c7840a54fbadb7cc96d17d973e9ba1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="OmegaHashController_8h_1a5b6f8a4106c6eb4827afef40ec1b2417" kindref="member">HashControllerStatus</ref></type>
+        <definition>HashControllerStatus OmegaHashController_reset</definition>
+        <argsstring>(OmegaHashController_t *in_controller)</argsstring>
+        <name>OmegaHashController_reset</name>
+        <param>
+          <type><ref refid="structOmegaHashController__t" kindref="compound">OmegaHashController_t</ref> *</type>
+          <declname>in_controller</declname>
+        </param>
+        <briefdescription>
+<para>After a successful <computeroutput><ref refid="OmegaHashController_8h_1a30ef27e4f38256ce859b85dbce627c60" kindref="member">OmegaHashController_ingest_data_streamed()</ref></computeroutput> hashing operation, <computeroutput><ref refid="structOmegaHashController__t" kindref="compound">OmegaHashController_t</ref></computeroutput> needs to be reset before doing another hash operation. Purpose of this function is to reset all the internal variables, free old memory and allocate new memory. This function isn&apos;t required to be called if the hash operation was <computeroutput><ref refid="OmegaHashController_8h_1a6abc3546931f6c3c6f80c296fa34fa79" kindref="member">OmegaHashController_ingest_data_single()</ref></computeroutput>. This function will be called internally in <computeroutput><ref refid="OmegaHashController_8h_1a6abc3546931f6c3c6f80c296fa34fa79" kindref="member">OmegaHashController_ingest_data_single()</ref></computeroutput> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>in_controller</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input parameter. Instance of the <computeroutput><ref refid="structOmegaHashController__t" kindref="compound">OmegaHashController_t</ref></computeroutput> that needs to be reset </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>HashControllerStatus HSC_SUCCESS if <computeroutput><ref refid="structOmegaHashController__t" kindref="compound">OmegaHashController_t</ref></computeroutput> reset succesfully </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaHashController/inc/OmegaHashController.h" line="95" column="26" declfile="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaHashController/inc/OmegaHashController.h" declline="95" declcolumn="26"/>
+      </memberdef>
+      <memberdef kind="function" id="OmegaHashController_8h_1a6abc3546931f6c3c6f80c296fa34fa79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="OmegaHashController_8h_1a5b6f8a4106c6eb4827afef40ec1b2417" kindref="member">HashControllerStatus</ref></type>
+        <definition>HashControllerStatus OmegaHashController_ingest_data_single</definition>
+        <argsstring>(OmegaHashController_t *in_controller, const uint8_t *in_buffer, const size_t in_buffer_size, const uint8_t *out_buffer)</argsstring>
+        <name>OmegaHashController_ingest_data_single</name>
+        <param>
+          <type><ref refid="structOmegaHashController__t" kindref="compound">OmegaHashController_t</ref> *</type>
+          <declname>in_controller</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>in_buffer</declname>
+        </param>
+        <param>
+          <type>const size_t</type>
+          <declname>in_buffer_size</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>out_buffer</declname>
+        </param>
+        <briefdescription>
+<para>If all the bytes needs to be hashed is known before hashing and/or system has enough heap/stack memory to allocate to all the bytes, This function can be called. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>in_controller</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input parameter. Instance of the <computeroutput><ref refid="structOmegaHashController__t" kindref="compound">OmegaHashController_t</ref></computeroutput> that previously initialized/reset. Therefore this cannot be NULL </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>in_buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input parameter. buffer that contains the bytes needs to be hashed. Cannot be NULL. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>in_buffer_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input parameter. Size of the input buffer that was provided in the <computeroutput>in_buffer</computeroutput> parameter. Cannot be NULL, 0 or negative. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out_buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output parameter. Result of the hash operation will be set in this byte buffer. This needs to be in the correct size. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>HashControllerStatus HSC_SUCCESS if hash operation was successful. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaHashController/inc/OmegaHashController.h" line="105" column="26" declfile="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaHashController/inc/OmegaHashController.h" declline="105" declcolumn="26"/>
+      </memberdef>
+      <memberdef kind="function" id="OmegaHashController_8h_1a30ef27e4f38256ce859b85dbce627c60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="OmegaHashController_8h_1a5b6f8a4106c6eb4827afef40ec1b2417" kindref="member">HashControllerStatus</ref></type>
+        <definition>HashControllerStatus OmegaHashController_ingest_data_streamed</definition>
+        <argsstring>(OmegaHashController_t *in_controller, const uint8_t *in_buffer, const size_t in_buffer_size, const uint8_t *out_buffer)</argsstring>
+        <name>OmegaHashController_ingest_data_streamed</name>
+        <param>
+          <type><ref refid="structOmegaHashController__t" kindref="compound">OmegaHashController_t</ref> *</type>
+          <declname>in_controller</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>in_buffer</declname>
+        </param>
+        <param>
+          <type>const size_t</type>
+          <declname>in_buffer_size</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>out_buffer</declname>
+        </param>
+        <briefdescription>
+<para>If all the bytes needs to be hashed is not known before hashing and/or system doesn&apos;t have enough heap/stack memory to allocate to all the bytes, This function can be called. To ingest the input data as well as retireve the final hash output this function is being used with providing some parameters as NULL. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>in_controller</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input parameter. Instance of the <computeroutput><ref refid="structOmegaHashController__t" kindref="compound">OmegaHashController_t</ref></computeroutput> that previously initialized/reset. Therefore this cannot be NULL </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>in_buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input parameter. buffer that contains the bytes needs to be hashed. This cannot be NULL during data ingestion and can be NULL when retireving hashed data. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>in_buffer_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input parameter. Size of the input buffer that was provided in the <computeroutput>in_buffer</computeroutput> parameter. This cannot be NULL during data ingestion and can be NULL, 0 or negative when retireving hashed data. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out_buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output parameter. Result of the hash operation will be set in this byte buffer. This can be NULL during ingestion of data. Cannot be NULL when retireving hashed data. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>HashControllerStatus HSC_SUCCESS if the hash operations [ingestion and digestion] was successful. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaHashController/inc/OmegaHashController.h" line="116" column="26" declfile="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaHashController/inc/OmegaHashController.h" declline="116" declcolumn="26"/>
+      </memberdef>
+      <memberdef kind="function" id="OmegaHashController_8h_1a1213b2df94b23e14894a40c9135e782b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="OmegaHashController_8h_1a5b6f8a4106c6eb4827afef40ec1b2417" kindref="member">HashControllerStatus</ref></type>
+        <definition>HashControllerStatus OmegaHashController_deinit</definition>
+        <argsstring>(OmegaHashController_t *in_controller)</argsstring>
+        <name>OmegaHashController_deinit</name>
+        <param>
+          <type><ref refid="structOmegaHashController__t" kindref="compound">OmegaHashController_t</ref> *</type>
+          <declname>in_controller</declname>
+        </param>
+        <briefdescription>
+<para>used to free all the allocated resources </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>in_controller</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input parameter. Instance of <computeroutput><ref refid="structOmegaHashController__t" kindref="compound">OmegaHashController_t</ref></computeroutput> that previously initialized. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>HashControllerStatus HSC_SUCCESS if the freeing of resources was successful </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaHashController/inc/OmegaHashController.h" line="123" column="26" declfile="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaHashController/inc/OmegaHashController.h" declline="123" declcolumn="26"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Chameera Subasinghe </para>
+</simplesect>
+<simplesect kind="date"><para>Friday, 1st March 2024 2:28:17 am </para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright 2024 - 2024 0m3g4ki113r, Xtronic </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="7"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>Project:<sp/>OmegaESP32Services</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>File<sp/>Name:<sp/>OmegaHashController.h</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>File<sp/>Created:<sp/>Friday,<sp/>1st<sp/>March<sp/>2024<sp/>2:28:17<sp/>am</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>Author:<sp/>Chameera<sp/>Subasinghe<sp/>(omegaki113r@gmail.com)</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>-----</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>Last<sp/>Modified:<sp/>Tuesday,<sp/>5th<sp/>March<sp/>2024<sp/>2:10:48<sp/>am</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>Modified<sp/>By:<sp/>Chameera<sp/>Subasinghe<sp/>(omegaki113r@gmail.com)</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>-----</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>2024<sp/>-<sp/>2024<sp/>0m3g4ki113r,<sp/>Xtronic</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>-----</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>HISTORY:</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>Date<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>By<sp/><sp/>Comments</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>----------<sp/><sp/><sp/>---<sp/>---------------------------------------------------------</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>05-03-2024<sp/><sp/><sp/>0m3g4<sp/><sp/><sp/>Declared<sp/>the<sp/>OmegaHashController_deinit</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>03-03-2024<sp/><sp/><sp/>0m3g4<sp/><sp/><sp/>Writing<sp/>documentation<sp/>that<sp/>generate<sp/>doxygen<sp/>docs</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__OMEGA_HASH_CONTROLLER__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__OMEGA_HASH_CONTROLLER__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;mbedtls/md.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;mbedtls/sha256.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="OmegaHashController_8h_1a5b6f8a4106c6eb4827afef40ec1b2417" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="46" refid="OmegaHashController_8h_1a5b6f8a4106c6eb4827afef40ec1b2417a1b9d3d3d67a04553bb2c8737a362b2b1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="OmegaHashController_8h_1a5b6f8a4106c6eb4827afef40ec1b2417a1b9d3d3d67a04553bb2c8737a362b2b1" kindref="member">HSC_SUCCESS</ref>,</highlight></codeline>
+<codeline lineno="48" refid="OmegaHashController_8h_1a5b6f8a4106c6eb4827afef40ec1b2417a3b80d8bf60acb49aa3c5f066a4e38031" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="OmegaHashController_8h_1a5b6f8a4106c6eb4827afef40ec1b2417a3b80d8bf60acb49aa3c5f066a4e38031" kindref="member">HSC_FAILED</ref>,</highlight></codeline>
+<codeline lineno="50" refid="OmegaHashController_8h_1a5b6f8a4106c6eb4827afef40ec1b2417a7308d0dcc794d42fdd44d4beb2dc62b2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="OmegaHashController_8h_1a5b6f8a4106c6eb4827afef40ec1b2417a7308d0dcc794d42fdd44d4beb2dc62b2" kindref="member">HSC_INVALID_PARAMETERS</ref>,</highlight></codeline>
+<codeline lineno="52" refid="OmegaHashController_8h_1a5b6f8a4106c6eb4827afef40ec1b2417ab8120df39299da6f4280dac49bf2626c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="OmegaHashController_8h_1a5b6f8a4106c6eb4827afef40ec1b2417ab8120df39299da6f4280dac49bf2626c" kindref="member">HSC_HASH_ALGO_NOT_FOUND</ref>,</highlight></codeline>
+<codeline lineno="59" refid="OmegaHashController_8h_1a5b6f8a4106c6eb4827afef40ec1b2417a2d16357521322f6ec70d3c5626a15ea4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="OmegaHashController_8h_1a5b6f8a4106c6eb4827afef40ec1b2417a2d16357521322f6ec70d3c5626a15ea4" kindref="member">HSC_HASH_ALGO_NOT_SUPPORTED</ref>,</highlight></codeline>
+<codeline lineno="61" refid="OmegaHashController_8h_1a5b6f8a4106c6eb4827afef40ec1b2417a70fb1f8d7f93726a15cc88f5aa179a14" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="OmegaHashController_8h_1a5b6f8a4106c6eb4827afef40ec1b2417a70fb1f8d7f93726a15cc88f5aa179a14" kindref="member">HSC_NO_MEM</ref>,</highlight></codeline>
+<codeline lineno="63" refid="OmegaHashController_8h_1a5b6f8a4106c6eb4827afef40ec1b2417afa0ba3a7286b277545b752ab9461c81a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="OmegaHashController_8h_1a5b6f8a4106c6eb4827afef40ec1b2417afa0ba3a7286b277545b752ab9461c81a" kindref="member">HSC_UNKNOWN</ref></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/><ref refid="OmegaHashController_8h_1a5b6f8a4106c6eb4827afef40ec1b2417" kindref="member">HashControllerStatus</ref>;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="OmegaHashController_8h_1ac7eb238362294fe929ac5b0c199672bb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="70" refid="OmegaHashController_8h_1ac7eb238362294fe929ac5b0c199672bba4fa568b441da9fd81063a64528f4b679" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="OmegaHashController_8h_1ac7eb238362294fe929ac5b0c199672bba4fa568b441da9fd81063a64528f4b679" kindref="member">HASH256</ref>,</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/><ref refid="OmegaHashController_8h_1ac7eb238362294fe929ac5b0c199672bb" kindref="member">HashAlgorithm</ref>;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="structOmegaHashController__t" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="77" refid="structOmegaHashController__t_1a50d7dbea6ce6d9e7cf7ece86e8d3570c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mbedtls_md_context_t<sp/><ref refid="structOmegaHashController__t_1a50d7dbea6ce6d9e7cf7ece86e8d3570c" kindref="member">ctx</ref>;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/><ref refid="structOmegaHashController__t" kindref="compound">OmegaHashController_t</ref>;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="OmegaHashController_8h_1a5b6f8a4106c6eb4827afef40ec1b2417" kindref="member">HashControllerStatus</ref><sp/><ref refid="OmegaHashController_8h_1a653dce9fca7a2ff090c26f760c8aaed2" kindref="member">OmegaHashController_init</ref>(<ref refid="structOmegaHashController__t" kindref="compound">OmegaHashController_t</ref><sp/>*in_controller,<sp/><ref refid="OmegaHashController_8h_1ac7eb238362294fe929ac5b0c199672bb" kindref="member">HashAlgorithm</ref><sp/>in_hash_algorithm);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="OmegaHashController_8h_1a5b6f8a4106c6eb4827afef40ec1b2417" kindref="member">HashControllerStatus</ref><sp/><ref refid="OmegaHashController_8h_1a8c7840a54fbadb7cc96d17d973e9ba1e" kindref="member">OmegaHashController_reset</ref>(<ref refid="structOmegaHashController__t" kindref="compound">OmegaHashController_t</ref><sp/>*in_controller);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="OmegaHashController_8h_1a5b6f8a4106c6eb4827afef40ec1b2417" kindref="member">HashControllerStatus</ref><sp/><ref refid="OmegaHashController_8h_1a6abc3546931f6c3c6f80c296fa34fa79" kindref="member">OmegaHashController_ingest_data_single</ref>(<ref refid="structOmegaHashController__t" kindref="compound">OmegaHashController_t</ref><sp/>*in_controller,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*in_buffer,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>in_buffer_size,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*out_buffer);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="OmegaHashController_8h_1a5b6f8a4106c6eb4827afef40ec1b2417" kindref="member">HashControllerStatus</ref><sp/><ref refid="OmegaHashController_8h_1a30ef27e4f38256ce859b85dbce627c60" kindref="member">OmegaHashController_ingest_data_streamed</ref>(<ref refid="structOmegaHashController__t" kindref="compound">OmegaHashController_t</ref><sp/>*in_controller,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*in_buffer,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>in_buffer_size,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*out_buffer);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="OmegaHashController_8h_1a5b6f8a4106c6eb4827afef40ec1b2417" kindref="member">HashControllerStatus</ref><sp/><ref refid="OmegaHashController_8h_1a1213b2df94b23e14894a40c9135e782b" kindref="member">OmegaHashController_deinit</ref>(<ref refid="structOmegaHashController__t" kindref="compound">OmegaHashController_t</ref><sp/>*in_controller);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaHashController/inc/OmegaHashController.h"/>
+  </compounddef>
+</doxygen>

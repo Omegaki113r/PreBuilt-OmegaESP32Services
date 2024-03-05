@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title>OmegaESP32Services</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>sfsadfsdfasdasdasdasdasdasdasdasda</para>
+<para><blockquote><para>gcovr <ndash/>gcov-ignore-errors=no_working_dir_found <ndash/>html-nested coverage/coverage.html </para>
+</blockquote></para>
+<para><blockquote><para>gprof ./bin/software-integration-tests gmon.out | gprof2dot -s -w | dot -Gdpi=300 -Tpng -o output.png </para>
+</blockquote></para>
+<para><ulink url="https://pandao.github.io/editor.md/en.html">MD editor</ulink> </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

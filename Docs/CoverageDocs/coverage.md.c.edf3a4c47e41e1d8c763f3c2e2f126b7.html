@@ -27,7 +27,7 @@
     </tr>
     <tr>
       <th scope="row">Date:</th>
-      <td>2024-03-03 12:44:56</td>
+      <td>2024-03-05 03:08:52</td>
     </tr>
   </table>
 </div>
@@ -41,21 +41,21 @@
     </tr>
     <tr>
       <th scope="row">Lines:</th>
-      <td>45</td>
+      <td>56</td>
       <td>365</td>
-      <td class="coverage-low">12.3%</td>
+      <td class="coverage-low">15.3%</td>
     </tr>
     <tr>
       <th scope="row">Functions:</th>
-      <td>7</td>
+      <td>8</td>
       <td>22</td>
-      <td class="coverage-low">31.8%</td>
+      <td class="coverage-low">36.4%</td>
     </tr>
     <tr>
       <th scope="row">Branches:</th>
-      <td>21</td>
+      <td>27</td>
       <td>225</td>
-      <td class="coverage-low">9.3%</td>
+      <td class="coverage-low">12.0%</td>
     </tr>
   </table>
 </div>
@@ -73,12 +73,12 @@
       <th>Call count</th>
       <th>Block coverage</th>
     </tr>
-    <tr><td><a href="#l685">mbedtls_md (line 685)</a></td><td>called 158 times, returned 158 times</td><td>25.0%</td></tr>
+    <tr><td><a href="#l685">mbedtls_md (line 685)</a></td><td>called 40 times, returned 40 times</td><td>25.0%</td></tr>
     <tr><td><a href="#l334">mbedtls_md_clone (line 334)</a></td><td>not called</td><td>0.0%</td></tr>
     <tr><td><a href="#l765">mbedtls_md_error_from_psa (line 765)</a></td><td>not called</td><td>0.0%</td></tr>
     <tr><td><a href="#l919">mbedtls_md_file (line 919)</a></td><td>not called</td><td>0.0%</td></tr>
-    <tr><td><a href="#l627">mbedtls_md_finish (line 627)</a></td><td>called 395 times, returned 395 times</td><td>36.0%</td></tr>
-    <tr><td><a href="#l261">mbedtls_md_free (line 261)</a></td><td>not called</td><td>0.0%</td></tr>
+    <tr><td><a href="#l627">mbedtls_md_finish (line 627)</a></td><td>called 100 times, returned 100 times</td><td>36.0%</td></tr>
+    <tr><td><a href="#l261">mbedtls_md_free (line 261)</a></td><td>called 220 times, returned 220 times</td><td>41.0%</td></tr>
     <tr><td><a href="#l893">mbedtls_md_get_name (line 893)</a></td><td>not called</td><td>0.0%</td></tr>
     <tr><td><a href="#l746">mbedtls_md_get_size (line 746)</a></td><td>not called</td><td>0.0%</td></tr>
     <tr><td><a href="#l755">mbedtls_md_get_type (line 755)</a></td><td>not called</td><td>0.0%</td></tr>
@@ -89,12 +89,12 @@
     <tr><td><a href="#l1017">mbedtls_md_hmac_update (line 1017)</a></td><td>not called</td><td>0.0%</td></tr>
     <tr><td><a href="#l908">mbedtls_md_info_from_ctx (line 908)</a></td><td>not called</td><td>0.0%</td></tr>
     <tr><td><a href="#l878">mbedtls_md_info_from_string (line 878)</a></td><td>not called</td><td>0.0%</td></tr>
-    <tr><td><a href="#l139">mbedtls_md_info_from_type (line 139)</a></td><td>called 790 times, returned 790 times</td><td>36.0%</td></tr>
-    <tr><td><a href="#l255">mbedtls_md_init (line 255)</a></td><td>called 632 times, returned 632 times</td><td>100.0%</td></tr>
+    <tr><td><a href="#l139">mbedtls_md_info_from_type (line 139)</a></td><td>called 220 times, returned 220 times</td><td>36.0%</td></tr>
+    <tr><td><a href="#l255">mbedtls_md_init (line 255)</a></td><td>called 180 times, returned 180 times</td><td>100.0%</td></tr>
     <tr><td><a href="#l830">mbedtls_md_list (line 830)</a></td><td>not called</td><td>0.0%</td></tr>
-    <tr><td><a href="#l418">mbedtls_md_setup (line 418)</a></td><td>called 632 times, returned 632 times</td><td>20.0%</td></tr>
-    <tr><td><a href="#l510">mbedtls_md_starts (line 510)</a></td><td>called 1185 times, returned 1185 times</td><td>35.0%</td></tr>
-    <tr><td><a href="#l571">mbedtls_md_update (line 571)</a></td><td>called 553 times, returned 553 times</td><td>43.0%</td></tr>
+    <tr><td><a href="#l418">mbedtls_md_setup (line 418)</a></td><td>called 180 times, returned 180 times</td><td>20.0%</td></tr>
+    <tr><td><a href="#l510">mbedtls_md_starts (line 510)</a></td><td>called 320 times, returned 320 times</td><td>35.0%</td></tr>
+    <tr><td><a href="#l571">mbedtls_md_update (line 571)</a></td><td>called 140 times, returned 140 times</td><td>43.0%</td></tr>
   </table>
 </details>
 
@@ -1079,7 +1079,7 @@
       <td class="lineno"><a id="l139" href="#l139">139</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">790</td>
+      <td class="linecount coveredLine">220</td>
       <td class="src coveredLine"><span class="k">const</span><span class="w"> </span><span class="n">mbedtls_md_info_t</span><span class="w"> </span><span class="o">*</span><span class="nf">mbedtls_md_info_from_type</span><span class="p">(</span><span class="n">mbedtls_md_type_t</span><span class="w"> </span><span class="n">md_type</span><span class="p">)</span></td>
     </tr>
     <tr class="source-line">
@@ -1099,18 +1099,18 @@
           <div class="notTakenBranch">&cross; Branch 1 not taken.</div>
           <div class="notTakenBranch">&cross; Branch 2 not taken.</div>
           <div class="notTakenBranch">&cross; Branch 3 not taken.</div>
-          <div class="takenBranch">&check; Branch 4 taken 632 times.</div>
+          <div class="takenBranch">&check; Branch 4 taken 180 times.</div>
           <div class="notTakenBranch">&cross; Branch 5 not taken.</div>
-          <div class="takenBranch">&check; Branch 6 taken 79 times.</div>
+          <div class="takenBranch">&check; Branch 6 taken 20 times.</div>
           <div class="notTakenBranch">&cross; Branch 7 not taken.</div>
           <div class="notTakenBranch">&cross; Branch 8 not taken.</div>
           <div class="notTakenBranch">&cross; Branch 9 not taken.</div>
           <div class="notTakenBranch">&cross; Branch 10 not taken.</div>
-          <div class="takenBranch">&check; Branch 11 taken 79 times.</div>
+          <div class="takenBranch">&check; Branch 11 taken 20 times.</div>
         </div>
         </details>
       </td>
-      <td class="linecount partialCoveredLine">790</td>
+      <td class="linecount partialCoveredLine">220</td>
       <td class="src partialCoveredLine"><span class="w">    </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">md_type</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
@@ -1236,14 +1236,14 @@
       <td class="lineno"><a id="l159" href="#l159">159</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">632</td>
+      <td class="linecount coveredLine">180</td>
       <td class="src coveredLine"><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="no">MBEDTLS_MD_SHA256</span><span class="p">:</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l160" href="#l160">160</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">632</td>
+      <td class="linecount coveredLine">180</td>
       <td class="src coveredLine"><span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="o">&amp;</span><span class="n">mbedtls_sha256_info</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
@@ -1292,14 +1292,14 @@
       <td class="lineno"><a id="l167" href="#l167">167</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">79</td>
+      <td class="linecount coveredLine">20</td>
       <td class="src coveredLine"><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="no">MBEDTLS_MD_SHA512</span><span class="p">:</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l168" href="#l168">168</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">79</td>
+      <td class="linecount coveredLine">20</td>
       <td class="src coveredLine"><span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="o">&amp;</span><span class="n">mbedtls_sha512_info</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
@@ -1425,14 +1425,14 @@
       <td class="lineno"><a id="l186" href="#l186">186</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">79</td>
+      <td class="linecount coveredLine">20</td>
       <td class="src coveredLine"><span class="w">        </span><span class="k">default</span><span class="o">:</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l187" href="#l187">187</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">79</td>
+      <td class="linecount coveredLine">20</td>
       <td class="src coveredLine"><span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="nb">NULL</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
@@ -1908,7 +1908,7 @@
       <td class="lineno"><a id="l255" href="#l255">255</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">632</td>
+      <td class="linecount coveredLine">180</td>
       <td class="src coveredLine"><span class="kt">void</span><span class="w"> </span><span class="nf">mbedtls_md_init</span><span class="p">(</span><span class="n">mbedtls_md_context_t</span><span class="w"> </span><span class="o">*</span><span class="n">ctx</span><span class="p">)</span></td>
     </tr>
     <tr class="source-line">
@@ -1929,14 +1929,14 @@
       <td class="lineno"><a id="l258" href="#l258">258</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">632</td>
+      <td class="linecount coveredLine">180</td>
       <td class="src coveredLine"><span class="w">    </span><span class="n">memset</span><span class="p">(</span><span class="n">ctx</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">mbedtls_md_context_t</span><span class="p">));</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l259" href="#l259">259</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">632</td>
+      <td class="linecount coveredLine">180</td>
       <td class="src coveredLine"><span class="p">}</span></td>
     </tr>
     <tr class="source-line">
@@ -1950,8 +1950,8 @@
       <td class="lineno"><a id="l261" href="#l261">261</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="kt">void</span><span class="w"> </span><span class="nf">mbedtls_md_free</span><span class="p">(</span><span class="n">mbedtls_md_context_t</span><span class="w"> </span><span class="o">*</span><span class="n">ctx</span><span class="p">)</span></td>
+      <td class="linecount coveredLine">220</td>
+      <td class="src coveredLine"><span class="kt">void</span><span class="w"> </span><span class="nf">mbedtls_md_free</span><span class="p">(</span><span class="n">mbedtls_md_context_t</span><span class="w"> </span><span class="o">*</span><span class="n">ctx</span><span class="p">)</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l262" href="#l262">262</a></td>
@@ -1963,16 +1963,25 @@
     <tr class="source-line">
       <td class="lineno"><a id="l263" href="#l263">263</a></td>
       <td class="linebranch">
+        <details class="linebranchDetails">
+        <summary class="linebranchSummary">3/4</summary>
+        <div class="linebranchContents">
+          <div class="takenBranch">&check; Branch 0 taken 220 times.</div>
+          <div class="notTakenBranch">&cross; Branch 1 not taken.</div>
+          <div class="takenBranch">&check; Branch 2 taken 40 times.</div>
+          <div class="takenBranch">&check; Branch 3 taken 180 times.</div>
+        </div>
+        </details>
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">ctx</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">NULL</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">ctx</span><span class="o">-&gt;</span><span class="n">md_info</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">NULL</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
+      <td class="linecount partialCoveredLine">220</td>
+      <td class="src partialCoveredLine"><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">ctx</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">NULL</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">ctx</span><span class="o">-&gt;</span><span class="n">md_info</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">NULL</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l264" href="#l264">264</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">        </span><span class="k">return</span><span class="p">;</span></td>
+      <td class="linecount coveredLine">40</td>
+      <td class="src coveredLine"><span class="w">        </span><span class="k">return</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l265" href="#l265">265</a></td>
@@ -1991,9 +2000,16 @@
     <tr class="source-line">
       <td class="lineno"><a id="l267" href="#l267">267</a></td>
       <td class="linebranch">
+        <details class="linebranchDetails">
+        <summary class="linebranchSummary">1/2</summary>
+        <div class="linebranchContents">
+          <div class="takenBranch">&check; Branch 0 taken 180 times.</div>
+          <div class="notTakenBranch">&cross; Branch 1 not taken.</div>
+        </div>
+        </details>
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">ctx</span><span class="o">-&gt;</span><span class="n">md_ctx</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
+      <td class="linecount partialCoveredLine">180</td>
+      <td class="src partialCoveredLine"><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">ctx</span><span class="o">-&gt;</span><span class="n">md_ctx</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l268" href="#l268">268</a></td>
@@ -2033,9 +2049,23 @@
     <tr class="source-line">
       <td class="lineno"><a id="l273" href="#l273">273</a></td>
       <td class="linebranch">
+        <details class="linebranchDetails">
+        <summary class="linebranchSummary">1/9</summary>
+        <div class="linebranchContents">
+          <div class="notTakenBranch">&cross; Branch 0 not taken.</div>
+          <div class="notTakenBranch">&cross; Branch 1 not taken.</div>
+          <div class="notTakenBranch">&cross; Branch 2 not taken.</div>
+          <div class="notTakenBranch">&cross; Branch 3 not taken.</div>
+          <div class="takenBranch">&check; Branch 4 taken 180 times.</div>
+          <div class="notTakenBranch">&cross; Branch 5 not taken.</div>
+          <div class="notTakenBranch">&cross; Branch 6 not taken.</div>
+          <div class="notTakenBranch">&cross; Branch 7 not taken.</div>
+          <div class="notTakenBranch">&cross; Branch 8 not taken.</div>
+        </div>
+        </details>
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">        </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">ctx</span><span class="o">-&gt;</span><span class="n">md_info</span><span class="o">-&gt;</span><span class="n">type</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
+      <td class="linecount partialCoveredLine">180</td>
+      <td class="src partialCoveredLine"><span class="w">        </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">ctx</span><span class="o">-&gt;</span><span class="n">md_info</span><span class="o">-&gt;</span><span class="n">type</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l274" href="#l274">274</a></td>
@@ -2188,22 +2218,22 @@
       <td class="lineno"><a id="l295" href="#l295">295</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">MBEDTLS_MD_SHA256</span><span class="p">:</span></td>
+      <td class="linecount coveredLine">180</td>
+      <td class="src coveredLine"><span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">MBEDTLS_MD_SHA256</span><span class="p">:</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l296" href="#l296">296</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                </span><span class="n">mbedtls_sha256_free</span><span class="p">(</span><span class="n">ctx</span><span class="o">-&gt;</span><span class="n">md_ctx</span><span class="p">);</span></td>
+      <td class="linecount coveredLine">180</td>
+      <td class="src coveredLine"><span class="w">                </span><span class="n">mbedtls_sha256_free</span><span class="p">(</span><span class="n">ctx</span><span class="o">-&gt;</span><span class="n">md_ctx</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l297" href="#l297">297</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">                </span><span class="k">break</span><span class="p">;</span></td>
+      <td class="linecount coveredLine">180</td>
+      <td class="src coveredLine"><span class="w">                </span><span class="k">break</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l298" href="#l298">298</a></td>
@@ -2370,8 +2400,8 @@
       <td class="lineno"><a id="l321" href="#l321">321</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">        </span><span class="n">mbedtls_free</span><span class="p">(</span><span class="n">ctx</span><span class="o">-&gt;</span><span class="n">md_ctx</span><span class="p">);</span></td>
+      <td class="linecount coveredLine">180</td>
+      <td class="src coveredLine"><span class="w">        </span><span class="n">mbedtls_free</span><span class="p">(</span><span class="n">ctx</span><span class="o">-&gt;</span><span class="n">md_ctx</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l322" href="#l322">322</a></td>
@@ -2397,9 +2427,16 @@
     <tr class="source-line">
       <td class="lineno"><a id="l325" href="#l325">325</a></td>
       <td class="linebranch">
+        <details class="linebranchDetails">
+        <summary class="linebranchSummary">1/2</summary>
+        <div class="linebranchContents">
+          <div class="notTakenBranch">&cross; Branch 0 not taken.</div>
+          <div class="takenBranch">&check; Branch 1 taken 180 times.</div>
+        </div>
+        </details>
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">ctx</span><span class="o">-&gt;</span><span class="n">hmac_ctx</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
+      <td class="linecount partialCoveredLine">180</td>
+      <td class="src partialCoveredLine"><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">ctx</span><span class="o">-&gt;</span><span class="n">hmac_ctx</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l326" href="#l326">326</a></td>
@@ -2440,8 +2477,8 @@
       <td class="lineno"><a id="l331" href="#l331">331</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">    </span><span class="n">mbedtls_platform_zeroize</span><span class="p">(</span><span class="n">ctx</span><span class="p">,</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">mbedtls_md_context_t</span><span class="p">));</span></td>
+      <td class="linecount coveredLine">180</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="n">mbedtls_platform_zeroize</span><span class="p">(</span><span class="n">ctx</span><span class="p">,</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">mbedtls_md_context_t</span><span class="p">));</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l332" href="#l332">332</a></td>
@@ -3049,7 +3086,7 @@
       <td class="lineno"><a id="l418" href="#l418">418</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">632</td>
+      <td class="linecount coveredLine">180</td>
       <td class="src coveredLine"><span class="kt">int</span><span class="w"> </span><span class="nf">mbedtls_md_setup</span><span class="p">(</span><span class="n">mbedtls_md_context_t</span><span class="w"> </span><span class="o">*</span><span class="n">ctx</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">mbedtls_md_info_t</span><span class="w"> </span><span class="o">*</span><span class="n">md_info</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">hmac</span><span class="p">)</span></td>
     </tr>
     <tr class="source-line">
@@ -3073,11 +3110,11 @@
         <summary class="linebranchSummary">1/2</summary>
         <div class="linebranchContents">
           <div class="notTakenBranch">&cross; Branch 0 not taken.</div>
-          <div class="takenBranch">&check; Branch 1 taken 632 times.</div>
+          <div class="takenBranch">&check; Branch 1 taken 180 times.</div>
         </div>
         </details>
       </td>
-      <td class="linecount partialCoveredLine">632</td>
+      <td class="linecount partialCoveredLine">180</td>
       <td class="src partialCoveredLine"><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">ctx</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">NULL</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
@@ -3108,11 +3145,11 @@
         <summary class="linebranchSummary">1/2</summary>
         <div class="linebranchContents">
           <div class="notTakenBranch">&cross; Branch 0 not taken.</div>
-          <div class="takenBranch">&check; Branch 1 taken 632 times.</div>
+          <div class="takenBranch">&check; Branch 1 taken 180 times.</div>
         </div>
         </details>
       </td>
-      <td class="linecount partialCoveredLine">632</td>
+      <td class="linecount partialCoveredLine">180</td>
       <td class="src partialCoveredLine"><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">md_info</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">NULL</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
@@ -3140,14 +3177,14 @@
       <td class="lineno"><a id="l429" href="#l429">429</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">632</td>
+      <td class="linecount coveredLine">180</td>
       <td class="src coveredLine"><span class="w">    </span><span class="n">ctx</span><span class="o">-&gt;</span><span class="n">md_info</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">md_info</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l430" href="#l430">430</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">632</td>
+      <td class="linecount coveredLine">180</td>
       <td class="src coveredLine"><span class="w">    </span><span class="n">ctx</span><span class="o">-&gt;</span><span class="n">md_ctx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
@@ -3161,7 +3198,7 @@
       <td class="lineno"><a id="l432" href="#l432">432</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">632</td>
+      <td class="linecount coveredLine">180</td>
       <td class="src coveredLine"><span class="w">    </span><span class="n">ctx</span><span class="o">-&gt;</span><span class="n">hmac_ctx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
@@ -3279,7 +3316,7 @@
           <div class="notTakenBranch">&cross; Branch 1 not taken.</div>
           <div class="notTakenBranch">&cross; Branch 2 not taken.</div>
           <div class="notTakenBranch">&cross; Branch 3 not taken.</div>
-          <div class="takenBranch">&check; Branch 4 taken 632 times.</div>
+          <div class="takenBranch">&check; Branch 4 taken 180 times.</div>
           <div class="notTakenBranch">&cross; Branch 5 not taken.</div>
           <div class="notTakenBranch">&cross; Branch 6 not taken.</div>
           <div class="notTakenBranch">&cross; Branch 7 not taken.</div>
@@ -3287,7 +3324,7 @@
         </div>
         </details>
       </td>
-      <td class="linecount partialCoveredLine">632</td>
+      <td class="linecount partialCoveredLine">180</td>
       <td class="src partialCoveredLine"><span class="w">    </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">md_info</span><span class="o">-&gt;</span><span class="n">type</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
@@ -3441,7 +3478,7 @@
       <td class="lineno"><a id="l470" href="#l470">470</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">632</td>
+      <td class="linecount coveredLine">180</td>
       <td class="src coveredLine"><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="no">MBEDTLS_MD_SHA256</span><span class="p">:</span></td>
     </tr>
     <tr class="source-line">
@@ -3451,18 +3488,18 @@
         <summary class="linebranchSummary">1/2</summary>
         <div class="linebranchContents">
           <div class="notTakenBranch">&cross; Branch 0 not taken.</div>
-          <div class="takenBranch">&check; Branch 1 taken 632 times.</div>
+          <div class="takenBranch">&check; Branch 1 taken 180 times.</div>
         </div>
         </details>
       </td>
-      <td class="linecount partialCoveredLine">632</td>
+      <td class="linecount partialCoveredLine">180</td>
       <td class="src partialCoveredLine"><span class="w">            </span><span class="n">ALLOC</span><span class="p">(</span><span class="n">sha256</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l472" href="#l472">472</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">632</td>
+      <td class="linecount coveredLine">180</td>
       <td class="src coveredLine"><span class="w">            </span><span class="k">break</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
@@ -3640,11 +3677,11 @@
         <summary class="linebranchSummary">1/2</summary>
         <div class="linebranchContents">
           <div class="notTakenBranch">&cross; Branch 0 not taken.</div>
-          <div class="takenBranch">&check; Branch 1 taken 632 times.</div>
+          <div class="takenBranch">&check; Branch 1 taken 180 times.</div>
         </div>
         </details>
       </td>
-      <td class="linecount partialCoveredLine">632</td>
+      <td class="linecount partialCoveredLine">180</td>
       <td class="src partialCoveredLine"><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">hmac</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
@@ -3707,7 +3744,7 @@
       <td class="lineno"><a id="l506" href="#l506">506</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">632</td>
+      <td class="linecount coveredLine">180</td>
       <td class="src coveredLine"><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
@@ -3735,7 +3772,7 @@
       <td class="lineno"><a id="l510" href="#l510">510</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">1185</td>
+      <td class="linecount coveredLine">320</td>
       <td class="src coveredLine"><span class="kt">int</span><span class="w"> </span><span class="nf">mbedtls_md_starts</span><span class="p">(</span><span class="n">mbedtls_md_context_t</span><span class="w"> </span><span class="o">*</span><span class="n">ctx</span><span class="p">)</span></td>
     </tr>
     <tr class="source-line">
@@ -3758,21 +3795,21 @@
         <details class="linebranchDetails">
         <summary class="linebranchSummary">3/4</summary>
         <div class="linebranchContents">
-          <div class="takenBranch">&check; Branch 0 taken 1185 times.</div>
+          <div class="takenBranch">&check; Branch 0 taken 320 times.</div>
           <div class="notTakenBranch">&cross; Branch 1 not taken.</div>
-          <div class="takenBranch">&check; Branch 2 taken 237 times.</div>
-          <div class="takenBranch">&check; Branch 3 taken 948 times.</div>
+          <div class="takenBranch">&check; Branch 2 taken 60 times.</div>
+          <div class="takenBranch">&check; Branch 3 taken 260 times.</div>
         </div>
         </details>
       </td>
-      <td class="linecount partialCoveredLine">1185</td>
+      <td class="linecount partialCoveredLine">320</td>
       <td class="src partialCoveredLine"><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">ctx</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">NULL</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">ctx</span><span class="o">-&gt;</span><span class="n">md_info</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">NULL</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l514" href="#l514">514</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">237</td>
+      <td class="linecount coveredLine">60</td>
       <td class="src coveredLine"><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">MBEDTLS_ERR_MD_BAD_INPUT_DATA</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
@@ -3869,7 +3906,7 @@
           <div class="notTakenBranch">&cross; Branch 1 not taken.</div>
           <div class="notTakenBranch">&cross; Branch 2 not taken.</div>
           <div class="notTakenBranch">&cross; Branch 3 not taken.</div>
-          <div class="takenBranch">&check; Branch 4 taken 948 times.</div>
+          <div class="takenBranch">&check; Branch 4 taken 260 times.</div>
           <div class="notTakenBranch">&cross; Branch 5 not taken.</div>
           <div class="notTakenBranch">&cross; Branch 6 not taken.</div>
           <div class="notTakenBranch">&cross; Branch 7 not taken.</div>
@@ -3880,7 +3917,7 @@
         </div>
         </details>
       </td>
-      <td class="linecount partialCoveredLine">948</td>
+      <td class="linecount partialCoveredLine">260</td>
       <td class="src partialCoveredLine"><span class="w">    </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">ctx</span><span class="o">-&gt;</span><span class="n">md_info</span><span class="o">-&gt;</span><span class="n">type</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
@@ -4006,14 +4043,14 @@
       <td class="lineno"><a id="l545" href="#l545">545</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">948</td>
+      <td class="linecount coveredLine">260</td>
       <td class="src coveredLine"><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="no">MBEDTLS_MD_SHA256</span><span class="p">:</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l546" href="#l546">546</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">948</td>
+      <td class="linecount coveredLine">260</td>
       <td class="src coveredLine"><span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">mbedtls_sha256_starts</span><span class="p">(</span><span class="n">ctx</span><span class="o">-&gt;</span><span class="n">md_ctx</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
@@ -4188,7 +4225,7 @@
       <td class="lineno"><a id="l571" href="#l571">571</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">553</td>
+      <td class="linecount coveredLine">140</td>
       <td class="src coveredLine"><span class="kt">int</span><span class="w"> </span><span class="nf">mbedtls_md_update</span><span class="p">(</span><span class="n">mbedtls_md_context_t</span><span class="w"> </span><span class="o">*</span><span class="n">ctx</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">input</span><span class="p">,</span><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="n">ilen</span><span class="p">)</span></td>
     </tr>
     <tr class="source-line">
@@ -4211,21 +4248,21 @@
         <details class="linebranchDetails">
         <summary class="linebranchSummary">3/4</summary>
         <div class="linebranchContents">
-          <div class="takenBranch">&check; Branch 0 taken 553 times.</div>
+          <div class="takenBranch">&check; Branch 0 taken 140 times.</div>
           <div class="notTakenBranch">&cross; Branch 1 not taken.</div>
-          <div class="takenBranch">&check; Branch 2 taken 79 times.</div>
-          <div class="takenBranch">&check; Branch 3 taken 474 times.</div>
+          <div class="takenBranch">&check; Branch 2 taken 20 times.</div>
+          <div class="takenBranch">&check; Branch 3 taken 120 times.</div>
         </div>
         </details>
       </td>
-      <td class="linecount partialCoveredLine">553</td>
+      <td class="linecount partialCoveredLine">140</td>
       <td class="src partialCoveredLine"><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">ctx</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">NULL</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">ctx</span><span class="o">-&gt;</span><span class="n">md_info</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">NULL</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l575" href="#l575">575</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">79</td>
+      <td class="linecount coveredLine">20</td>
       <td class="src coveredLine"><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">MBEDTLS_ERR_MD_BAD_INPUT_DATA</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
@@ -4308,7 +4345,7 @@
           <div class="notTakenBranch">&cross; Branch 1 not taken.</div>
           <div class="notTakenBranch">&cross; Branch 2 not taken.</div>
           <div class="notTakenBranch">&cross; Branch 3 not taken.</div>
-          <div class="takenBranch">&check; Branch 4 taken 474 times.</div>
+          <div class="takenBranch">&check; Branch 4 taken 120 times.</div>
           <div class="notTakenBranch">&cross; Branch 5 not taken.</div>
           <div class="notTakenBranch">&cross; Branch 6 not taken.</div>
           <div class="notTakenBranch">&cross; Branch 7 not taken.</div>
@@ -4316,7 +4353,7 @@
         </div>
         </details>
       </td>
-      <td class="linecount partialCoveredLine">474</td>
+      <td class="linecount partialCoveredLine">120</td>
       <td class="src partialCoveredLine"><span class="w">    </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">ctx</span><span class="o">-&gt;</span><span class="n">md_info</span><span class="o">-&gt;</span><span class="n">type</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
@@ -4442,14 +4479,14 @@
       <td class="lineno"><a id="l604" href="#l604">604</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">474</td>
+      <td class="linecount coveredLine">120</td>
       <td class="src coveredLine"><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="no">MBEDTLS_MD_SHA256</span><span class="p">:</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l605" href="#l605">605</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">474</td>
+      <td class="linecount coveredLine">120</td>
       <td class="src coveredLine"><span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">mbedtls_sha256_update</span><span class="p">(</span><span class="n">ctx</span><span class="o">-&gt;</span><span class="n">md_ctx</span><span class="p">,</span><span class="w"> </span><span class="n">input</span><span class="p">,</span><span class="w"> </span><span class="n">ilen</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
@@ -4603,7 +4640,7 @@
       <td class="lineno"><a id="l627" href="#l627">627</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">395</td>
+      <td class="linecount coveredLine">100</td>
       <td class="src coveredLine"><span class="kt">int</span><span class="w"> </span><span class="nf">mbedtls_md_finish</span><span class="p">(</span><span class="n">mbedtls_md_context_t</span><span class="w"> </span><span class="o">*</span><span class="n">ctx</span><span class="p">,</span><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">output</span><span class="p">)</span></td>
     </tr>
     <tr class="source-line">
@@ -4626,14 +4663,14 @@
         <details class="linebranchDetails">
         <summary class="linebranchSummary">2/4</summary>
         <div class="linebranchContents">
-          <div class="takenBranch">&check; Branch 0 taken 395 times.</div>
+          <div class="takenBranch">&check; Branch 0 taken 100 times.</div>
           <div class="notTakenBranch">&cross; Branch 1 not taken.</div>
           <div class="notTakenBranch">&cross; Branch 2 not taken.</div>
-          <div class="takenBranch">&check; Branch 3 taken 395 times.</div>
+          <div class="takenBranch">&check; Branch 3 taken 100 times.</div>
         </div>
         </details>
       </td>
-      <td class="linecount partialCoveredLine">395</td>
+      <td class="linecount partialCoveredLine">100</td>
       <td class="src partialCoveredLine"><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">ctx</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">NULL</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">ctx</span><span class="o">-&gt;</span><span class="n">md_info</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">NULL</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
@@ -4737,7 +4774,7 @@
           <div class="notTakenBranch">&cross; Branch 1 not taken.</div>
           <div class="notTakenBranch">&cross; Branch 2 not taken.</div>
           <div class="notTakenBranch">&cross; Branch 3 not taken.</div>
-          <div class="takenBranch">&check; Branch 4 taken 395 times.</div>
+          <div class="takenBranch">&check; Branch 4 taken 100 times.</div>
           <div class="notTakenBranch">&cross; Branch 5 not taken.</div>
           <div class="notTakenBranch">&cross; Branch 6 not taken.</div>
           <div class="notTakenBranch">&cross; Branch 7 not taken.</div>
@@ -4745,7 +4782,7 @@
         </div>
         </details>
       </td>
-      <td class="linecount partialCoveredLine">395</td>
+      <td class="linecount partialCoveredLine">100</td>
       <td class="src partialCoveredLine"><span class="w">    </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">ctx</span><span class="o">-&gt;</span><span class="n">md_info</span><span class="o">-&gt;</span><span class="n">type</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
@@ -4871,14 +4908,14 @@
       <td class="lineno"><a id="l662" href="#l662">662</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">395</td>
+      <td class="linecount coveredLine">100</td>
       <td class="src coveredLine"><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="no">MBEDTLS_MD_SHA256</span><span class="p">:</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l663" href="#l663">663</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">395</td>
+      <td class="linecount coveredLine">100</td>
       <td class="src coveredLine"><span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">mbedtls_sha256_finish</span><span class="p">(</span><span class="n">ctx</span><span class="o">-&gt;</span><span class="n">md_ctx</span><span class="p">,</span><span class="w"> </span><span class="n">output</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
@@ -5032,7 +5069,7 @@
       <td class="lineno"><a id="l685" href="#l685">685</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">158</td>
+      <td class="linecount coveredLine">40</td>
       <td class="src coveredLine"><span class="kt">int</span><span class="w"> </span><span class="nf">mbedtls_md</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">mbedtls_md_info_t</span><span class="w"> </span><span class="o">*</span><span class="n">md_info</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">input</span><span class="p">,</span><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="n">ilen</span><span class="p">,</span></td>
     </tr>
     <tr class="source-line">
@@ -5056,11 +5093,11 @@
         <summary class="linebranchSummary">1/2</summary>
         <div class="linebranchContents">
           <div class="notTakenBranch">&cross; Branch 0 not taken.</div>
-          <div class="takenBranch">&check; Branch 1 taken 158 times.</div>
+          <div class="takenBranch">&check; Branch 1 taken 40 times.</div>
         </div>
         </details>
       </td>
-      <td class="linecount partialCoveredLine">158</td>
+      <td class="linecount partialCoveredLine">40</td>
       <td class="src partialCoveredLine"><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">md_info</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">NULL</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
@@ -5164,7 +5201,7 @@
           <div class="notTakenBranch">&cross; Branch 1 not taken.</div>
           <div class="notTakenBranch">&cross; Branch 2 not taken.</div>
           <div class="notTakenBranch">&cross; Branch 3 not taken.</div>
-          <div class="takenBranch">&check; Branch 4 taken 158 times.</div>
+          <div class="takenBranch">&check; Branch 4 taken 40 times.</div>
           <div class="notTakenBranch">&cross; Branch 5 not taken.</div>
           <div class="notTakenBranch">&cross; Branch 6 not taken.</div>
           <div class="notTakenBranch">&cross; Branch 7 not taken.</div>
@@ -5175,7 +5212,7 @@
         </div>
         </details>
       </td>
-      <td class="linecount partialCoveredLine">158</td>
+      <td class="linecount partialCoveredLine">40</td>
       <td class="src partialCoveredLine"><span class="w">    </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">md_info</span><span class="o">-&gt;</span><span class="n">type</span><span class="p">)</span><span class="w"> </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
@@ -5301,14 +5338,14 @@
       <td class="lineno"><a id="l720" href="#l720">720</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">158</td>
+      <td class="linecount coveredLine">40</td>
       <td class="src coveredLine"><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="no">MBEDTLS_MD_SHA256</span><span class="p">:</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l721" href="#l721">721</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">158</td>
+      <td class="linecount coveredLine">40</td>
       <td class="src coveredLine"><span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">mbedtls_sha256</span><span class="p">(</span><span class="n">input</span><span class="p">,</span><span class="w"> </span><span class="n">ilen</span><span class="p">,</span><span class="w"> </span><span class="n">output</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">

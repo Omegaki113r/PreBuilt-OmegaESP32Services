@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_0b118b1692b1d424227716e2cb965d47" kind="dir">
+    <compoundname>/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/tests</compoundname>
+    <innerfile refid="OmegaFileSystemController_8test_8h">OmegaFileSystemController.test.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/tests/"/>
+  </compounddef>
+</doxygen>

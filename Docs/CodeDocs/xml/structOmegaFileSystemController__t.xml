@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structOmegaFileSystemController__t" kind="struct" language="C++" prot="public">
+    <compoundname>OmegaFileSystemController_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structOmegaFileSystemController__t_1a10b00e5be8aa1e93dc7a28c636af381f" prot="public" static="no" mutable="no">
+        <type><ref refid="structOmegaFileData__t" kindref="compound">OmegaFileData_t</ref></type>
+        <definition>OmegaFileData_t OmegaFileSystemController_t::in_out_data</definition>
+        <argsstring></argsstring>
+        <name>in_out_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" line="77" column="25" bodyfile="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>OmegaFileSystemController_t</label>
+        <link refid="structOmegaFileSystemController__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>in_out_data</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>OmegaFileData_t</label>
+        <link refid="structOmegaFileData__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" line="76" column="1" bodyfile="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" bodystart="75" bodyend="78"/>
+    <listofallmembers>
+      <member refid="structOmegaFileSystemController__t_1a10b00e5be8aa1e93dc7a28c636af381f" prot="public" virt="non-virtual"><scope>OmegaFileSystemController_t</scope><name>in_out_data</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -45,7 +45,9 @@ enum \mbox{\hyperlink{OmegaHashController_8h_ac7eb238362294fe929ac5b0c199672bb}{
 \mbox{\hyperlink{OmegaHashController_8h_a5b6f8a4106c6eb4827afef40ec1b2417}{Hash\+Controller\+Status}} \mbox{\hyperlink{OmegaHashController_8h_a6abc3546931f6c3c6f80c296fa34fa79}{Omega\+Hash\+Controller\+\_\+ingest\+\_\+data\+\_\+single}} (\mbox{\hyperlink{structOmegaHashController__t}{Omega\+Hash\+Controller\+\_\+t}} $\ast$in\+\_\+controller, const uint8\+\_\+t $\ast$in\+\_\+buffer, const size\+\_\+t in\+\_\+buffer\+\_\+size, const uint8\+\_\+t $\ast$out\+\_\+buffer)
 \begin{DoxyCompactList}\small\item\em If all the bytes needs to be hashed is known before hashing and/or system has enough heap/stack memory to allocate to all the bytes, This function can be called. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{OmegaHashController_8h_a5b6f8a4106c6eb4827afef40ec1b2417}{Hash\+Controller\+Status}} \mbox{\hyperlink{OmegaHashController_8h_a30ef27e4f38256ce859b85dbce627c60}{Omega\+Hash\+Controller\+\_\+ingest\+\_\+data\+\_\+streamed}} (\mbox{\hyperlink{structOmegaHashController__t}{Omega\+Hash\+Controller\+\_\+t}} $\ast$in\+\_\+controller, const uint8\+\_\+t $\ast$in\+\_\+buffer, const size\+\_\+t in\+\_\+buffer\+\_\+size, const uint8\+\_\+t $\ast$out\+\_\+buffer)
-\begin{DoxyCompactList}\small\item\em If all the bytes needs to be hashed is not known before hashing and/or system doesn\textquotesingle{}t have enough heap/stack memory to allocate to all the bytes, This function can be called. To ingest the input data as well as retireve the final hash output this function is being used with providing some parameters as N\+U\+LL. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em If all the bytes needs to be hashed is not known before hashing and/or system doesn\textquotesingle{}t have enough heap/stack memory to allocate to all the bytes, This function can be called. To ingest the input data as well as retireve the final hash output this function is being used with providing some parameters as N\+U\+LL. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{OmegaHashController_8h_a5b6f8a4106c6eb4827afef40ec1b2417}{Hash\+Controller\+Status}} \mbox{\hyperlink{OmegaHashController_8h_a1213b2df94b23e14894a40c9135e782b}{Omega\+Hash\+Controller\+\_\+deinit}} (\mbox{\hyperlink{structOmegaHashController__t}{Omega\+Hash\+Controller\+\_\+t}} $\ast$in\+\_\+controller)
+\begin{DoxyCompactList}\small\item\em used to free all the allocated resources \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -120,6 +122,24 @@ H\+S\+C\+\_\+\+U\+N\+K\+N\+O\+WN&Indicates Unknown error has occured. \\
 
 
 \doxysubsection{Function Documentation}
+\mbox{\Hypertarget{OmegaHashController_8h_a1213b2df94b23e14894a40c9135e782b}\label{OmegaHashController_8h_a1213b2df94b23e14894a40c9135e782b}} 
+\index{OmegaHashController.h@{OmegaHashController.h}!OmegaHashController\_deinit@{OmegaHashController\_deinit}}
+\index{OmegaHashController\_deinit@{OmegaHashController\_deinit}!OmegaHashController.h@{OmegaHashController.h}}
+\doxysubsubsection{\texorpdfstring{OmegaHashController\_deinit()}{OmegaHashController\_deinit()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{OmegaHashController_8h_a5b6f8a4106c6eb4827afef40ec1b2417}{Hash\+Controller\+Status}} Omega\+Hash\+Controller\+\_\+deinit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structOmegaHashController__t}{Omega\+Hash\+Controller\+\_\+t}} $\ast$}]{in\+\_\+controller }\end{DoxyParamCaption})}
+
+
+
+used to free all the allocated resources 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in\+\_\+controller} & Input parameter. Instance of {\ttfamily \mbox{\hyperlink{structOmegaHashController__t}{Omega\+Hash\+Controller\+\_\+t}}} that previously initialized. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Hash\+Controller\+Status H\+S\+C\+\_\+\+S\+U\+C\+C\+E\+SS if the freeing of resources was successful 
+\end{DoxyReturn}
 \mbox{\Hypertarget{OmegaHashController_8h_a6abc3546931f6c3c6f80c296fa34fa79}\label{OmegaHashController_8h_a6abc3546931f6c3c6f80c296fa34fa79}} 
 \index{OmegaHashController.h@{OmegaHashController.h}!OmegaHashController\_ingest\_data\_single@{OmegaHashController\_ingest\_data\_single}}
 \index{OmegaHashController\_ingest\_data\_single@{OmegaHashController\_ingest\_data\_single}!OmegaHashController.h@{OmegaHashController.h}}
