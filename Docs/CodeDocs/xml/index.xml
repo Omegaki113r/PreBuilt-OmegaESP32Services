@@ -22,7 +22,6 @@
     <member refid="OmegaFileSystemController_8h_1a434373c857899f086007b65c6d309ad9a31d99f1af30d69f2187cdfebc6e473ab" kind="enumvalue"><name>FSC_FILE_HANDLE_NOT_EXIST</name></member>
     <member refid="OmegaFileSystemController_8h_1a434373c857899f086007b65c6d309ad9a9668a838b48dcdbb8818637233aca111" kind="enumvalue"><name>FSC_NO_MEM</name></member>
     <member refid="OmegaFileSystemController_8h_1a434373c857899f086007b65c6d309ad9aafe2ab0e7b1fb27f3ef585b795c72a1f" kind="enumvalue"><name>FSC_END_OF_FILE</name></member>
-    <member refid="OmegaFileSystemController_8h_1a434373c857899f086007b65c6d309ad9ac5d43284ff15a9759986a2e26ef32bec" kind="enumvalue"><name>FSC_NOT_INIT</name></member>
     <member refid="OmegaFileSystemController_8h_1a434373c857899f086007b65c6d309ad9aefa02ebad4593abef103d0c99319f7b2" kind="enumvalue"><name>FSC_UNKNOWN</name></member>
     <member refid="OmegaFileSystemController_8h_1ad36f89306d960065a1a0406284474d12" kind="enum"><name>FileSystemOpenMode</name></member>
     <member refid="OmegaFileSystemController_8h_1ad36f89306d960065a1a0406284474d12a6c1e47c2556673ca09497ada3062b14c" kind="enumvalue"><name>READING</name></member>
@@ -35,7 +34,6 @@
     <member refid="OmegaFileSystemController_8h_1ab39b3bcddcc65be29311de1f21d701d8a07d3884af44683f7748a2837f9152c40" kind="enumvalue"><name>READ_ALL</name></member>
     <member refid="OmegaFileSystemController_8h_1ad967b03d472fe00cce8699d8352753d4" kind="typedef"><name>FileHandle</name></member>
     <member refid="OmegaFileSystemController_8h_1aa4eb29332f339ea97728580f926fb7dd" kind="function"><name>OmegaFileSystemController_init</name></member>
-    <member refid="OmegaFileSystemController_8h_1a79b23d0d00bd1c795fda92a407d8bb06" kind="function"><name>OmegaFileSystemController_deinit</name></member>
     <member refid="OmegaFileSystemController_8h_1abeb80b5afc6c8d5b124d0a2686c946ab" kind="function"><name>OmegaFileSystemController_open_file</name></member>
     <member refid="OmegaFileSystemController_8h_1ab46ead3bed399714aadfdb1d89074475" kind="function"><name>OmegaFileSystemController_close_file</name></member>
     <member refid="OmegaFileSystemController_8h_1a83cc8eee3de8e3f7c70d9708a07a9cc7" kind="function"><name>OmegaFileSystemController_read_file</name></member>
@@ -104,17 +102,17 @@
   </compound>
   <compound refid="README_8md" kind="file"><name>README.md</name>
   </compound>
-  <compound refid="dir_22812cb2a4dbbf6b53d496452b156662" kind="dir"><name>/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc</name>
+  <compound refid="dir_22812cb2a4dbbf6b53d496452b156662" kind="dir"><name>inc</name>
   </compound>
-  <compound refid="dir_ba153204e3cda4484d415264ca4a5410" kind="dir"><name>/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaHashController/inc</name>
+  <compound refid="dir_ba153204e3cda4484d415264ca4a5410" kind="dir"><name>inc</name>
   </compound>
-  <compound refid="dir_57e898fb1dcd2d12388daa5dace85b34" kind="dir"><name>/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController</name>
+  <compound refid="dir_57e898fb1dcd2d12388daa5dace85b34" kind="dir"><name>OmegaFileSystemController</name>
   </compound>
-  <compound refid="dir_8e5f640de18441cf5e25c789dc96abf6" kind="dir"><name>/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaHashController</name>
+  <compound refid="dir_8e5f640de18441cf5e25c789dc96abf6" kind="dir"><name>OmegaHashController</name>
   </compound>
-  <compound refid="dir_0b118b1692b1d424227716e2cb965d47" kind="dir"><name>/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/tests</name>
+  <compound refid="dir_0b118b1692b1d424227716e2cb965d47" kind="dir"><name>tests</name>
   </compound>
-  <compound refid="dir_142645e55dc1410f050269127b440adc" kind="dir"><name>/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaHashController/tests</name>
+  <compound refid="dir_142645e55dc1410f050269127b440adc" kind="dir"><name>tests</name>
   </compound>
   <compound refid="indexpage" kind="page"><name>index</name>
   </compound>

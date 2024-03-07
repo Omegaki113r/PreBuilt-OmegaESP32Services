@@ -11,6 +11,7 @@
         <enumvalue id="OmegaFileSystemController_8h_1a434373c857899f086007b65c6d309ad9ad0da68c9b251a0b7ebe6e1a2af8665ed" prot="public">
           <name>FSC_SUCCESS</name>
           <briefdescription>
+<para>Indicates success in any operation related to FileSystemController. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -18,6 +19,7 @@
         <enumvalue id="OmegaFileSystemController_8h_1a434373c857899f086007b65c6d309ad9a1a65eb351752d40274fcfd19ca6fdf5d" prot="public">
           <name>FSC_FAILED</name>
           <briefdescription>
+<para>Indicates failure in any operation related to FileSystemController. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -25,6 +27,7 @@
         <enumvalue id="OmegaFileSystemController_8h_1a434373c857899f086007b65c6d309ad9a5471b0b2d86a070163b90bb09927f8d3" prot="public">
           <name>FSC_INVALID_OPENMODE</name>
           <briefdescription>
+<para>Indicates API misuse of using invalid <computeroutput>FileSystemOpenMode</computeroutput> in <computeroutput>OmegaFileSystemController_open_file()</computeroutput> </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -32,6 +35,7 @@
         <enumvalue id="OmegaFileSystemController_8h_1a434373c857899f086007b65c6d309ad9a31f69469406109b981f8e9dd1b7e6945" prot="public">
           <name>FSC_INVALID_PARAMETERS</name>
           <briefdescription>
+<para>Indicates failure fir to invalid parameters. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -39,6 +43,7 @@
         <enumvalue id="OmegaFileSystemController_8h_1a434373c857899f086007b65c6d309ad9ad25d679af85b5bd373fb9b1d0e1c45d3" prot="public">
           <name>FSC_FILE_NOT_EXIST</name>
           <briefdescription>
+<para>Indicates a failure &quot;File Not existing on the file system&quot; when calling <computeroutput>OmegaFileSystemController_open_file()</computeroutput> with READING only. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -46,6 +51,7 @@
         <enumvalue id="OmegaFileSystemController_8h_1a434373c857899f086007b65c6d309ad9a31d99f1af30d69f2187cdfebc6e473ab" prot="public">
           <name>FSC_FILE_HANDLE_NOT_EXIST</name>
           <briefdescription>
+<para>Indicates a API misuse of invalid parameter of type FileHandle being received to functions. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -53,6 +59,7 @@
         <enumvalue id="OmegaFileSystemController_8h_1a434373c857899f086007b65c6d309ad9a9668a838b48dcdbb8818637233aca111" prot="public">
           <name>FSC_NO_MEM</name>
           <briefdescription>
+<para>Indicates failure due to not having enough heap memory needed to allocate for the operation. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -60,13 +67,7 @@
         <enumvalue id="OmegaFileSystemController_8h_1a434373c857899f086007b65c6d309ad9aafe2ab0e7b1fb27f3ef585b795c72a1f" prot="public">
           <name>FSC_END_OF_FILE</name>
           <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="OmegaFileSystemController_8h_1a434373c857899f086007b65c6d309ad9ac5d43284ff15a9759986a2e26ef32bec" prot="public">
-          <name>FSC_NOT_INIT</name>
-          <briefdescription>
+<para>Indicates the end of file reading a file. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -74,17 +75,19 @@
         <enumvalue id="OmegaFileSystemController_8h_1a434373c857899f086007b65c6d309ad9aefa02ebad4593abef103d0c99319f7b2" prot="public">
           <name>FSC_UNKNOWN</name>
           <briefdescription>
+<para>Indicates an unknown error. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <briefdescription>
+<para>ReturnTypes/StatusCodes for the File System Controller. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" line="37" column="5" bodyfile="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" bodystart="36" bodyend="48"/>
+        <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" line="39" column="5" bodyfile="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" bodystart="38" bodyend="60"/>
       </memberdef>
       <memberdef kind="enum" id="OmegaFileSystemController_8h_1ad36f89306d960065a1a0406284474d12" prot="public" static="no" strong="no">
         <type></type>
@@ -122,12 +125,14 @@
           </detaileddescription>
         </enumvalue>
         <briefdescription>
+<para>FileSystemOpenMode(s) that needs to be specified when calling <computeroutput>OmegaFileSystemController_open_file()</computeroutput> </para>
         </briefdescription>
         <detaileddescription>
+<para>Possible combinations are, READING|WRITING|OVERWRITE READING|WRITING|APPEND READING WRITING|OVERWRITE WRITING|APPEND </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" line="51" column="5" bodyfile="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" bodystart="50" bodyend="56"/>
+        <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" line="74" column="5" bodyfile="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" bodystart="73" bodyend="79"/>
       </memberdef>
       <memberdef kind="enum" id="OmegaFileSystemController_8h_1ab39b3bcddcc65be29311de1f21d701d8" prot="public" static="no" strong="no">
         <type></type>
@@ -154,12 +159,16 @@
           </detaileddescription>
         </enumvalue>
         <briefdescription>
+<para>ReadMode(s) that needs to be specified when calling <computeroutput>OmegaFileSystemController_read_file()</computeroutput> </para>
         </briefdescription>
         <detaileddescription>
+<para>READ_LINE =&gt; Reads set of characters till &apos;<linebreak/>
+&apos; including the &apos;<linebreak/>
+&apos;. If EOF (End Of File) met just the content upto EOF is read READ_CHUNK =&gt; Read only pre-specified number of bytes READ_ALL =&gt; Read the whole file in 1 go </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" line="59" column="5" bodyfile="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" bodystart="58" bodyend="63"/>
+        <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" line="90" column="5" bodyfile="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" bodystart="89" bodyend="94"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
@@ -169,17 +178,18 @@
         <argsstring></argsstring>
         <name>FileHandle</name>
         <briefdescription>
+<para>FileHandle that needs to be used to operate using FileSystemController. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" line="65" column="22" bodyfile="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" bodystart="65" bodyend="-1"/>
+        <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" line="97" column="22" bodyfile="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" bodystart="97" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
       <memberdef kind="function" id="OmegaFileSystemController_8h_1aa4eb29332f339ea97728580f926fb7dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>FileSystemControllerStatus</type>
+        <type><ref refid="OmegaFileSystemController_8h_1a434373c857899f086007b65c6d309ad9" kindref="member">FileSystemControllerStatus</ref></type>
         <definition>FileSystemControllerStatus OmegaFileSystemController_init</definition>
         <argsstring>(OmegaFileSystemController_t *)</argsstring>
         <name>OmegaFileSystemController_init</name>
@@ -192,26 +202,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" line="80" column="32" declfile="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" declline="80" declcolumn="32"/>
-      </memberdef>
-      <memberdef kind="function" id="OmegaFileSystemController_8h_1a79b23d0d00bd1c795fda92a407d8bb06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>FileSystemControllerStatus</type>
-        <definition>FileSystemControllerStatus OmegaFileSystemController_deinit</definition>
-        <argsstring>(OmegaFileSystemController_t *)</argsstring>
-        <name>OmegaFileSystemController_deinit</name>
-        <param>
-          <type><ref refid="structOmegaFileSystemController__t" kindref="compound">OmegaFileSystemController_t</ref> *</type>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" line="81" column="32" declfile="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" declline="81" declcolumn="32"/>
+        <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" line="121" column="32" declfile="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" declline="121" declcolumn="32"/>
       </memberdef>
       <memberdef kind="function" id="OmegaFileSystemController_8h_1abeb80b5afc6c8d5b124d0a2686c946ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>FileSystemControllerStatus</type>
+        <type><ref refid="OmegaFileSystemController_8h_1a434373c857899f086007b65c6d309ad9" kindref="member">FileSystemControllerStatus</ref></type>
         <definition>FileSystemControllerStatus OmegaFileSystemController_open_file</definition>
         <argsstring>(OmegaFileSystemController_t *, const FileHandle *, const char *, FileSystemOpenMode)</argsstring>
         <name>OmegaFileSystemController_open_file</name>
@@ -219,13 +213,13 @@
           <type><ref refid="structOmegaFileSystemController__t" kindref="compound">OmegaFileSystemController_t</ref> *</type>
         </param>
         <param>
-          <type>const FileHandle *</type>
+          <type>const <ref refid="OmegaFileSystemController_8h_1ad967b03d472fe00cce8699d8352753d4" kindref="member">FileHandle</ref> *</type>
         </param>
         <param>
           <type>const char *</type>
         </param>
         <param>
-          <type>FileSystemOpenMode</type>
+          <type><ref refid="OmegaFileSystemController_8h_1ad36f89306d960065a1a0406284474d12" kindref="member">FileSystemOpenMode</ref></type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -233,10 +227,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" line="82" column="32" declfile="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" declline="82" declcolumn="32"/>
+        <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" line="122" column="32" declfile="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" declline="122" declcolumn="32"/>
       </memberdef>
       <memberdef kind="function" id="OmegaFileSystemController_8h_1ab46ead3bed399714aadfdb1d89074475" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>FileSystemControllerStatus</type>
+        <type><ref refid="OmegaFileSystemController_8h_1a434373c857899f086007b65c6d309ad9" kindref="member">FileSystemControllerStatus</ref></type>
         <definition>FileSystemControllerStatus OmegaFileSystemController_close_file</definition>
         <argsstring>(OmegaFileSystemController_t *, FileHandle)</argsstring>
         <name>OmegaFileSystemController_close_file</name>
@@ -244,7 +238,7 @@
           <type><ref refid="structOmegaFileSystemController__t" kindref="compound">OmegaFileSystemController_t</ref> *</type>
         </param>
         <param>
-          <type>FileHandle</type>
+          <type><ref refid="OmegaFileSystemController_8h_1ad967b03d472fe00cce8699d8352753d4" kindref="member">FileHandle</ref></type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -252,10 +246,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" line="83" column="32" declfile="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" declline="83" declcolumn="32"/>
+        <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" line="123" column="32" declfile="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" declline="123" declcolumn="32"/>
       </memberdef>
       <memberdef kind="function" id="OmegaFileSystemController_8h_1a83cc8eee3de8e3f7c70d9708a07a9cc7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>FileSystemControllerStatus</type>
+        <type><ref refid="OmegaFileSystemController_8h_1a434373c857899f086007b65c6d309ad9" kindref="member">FileSystemControllerStatus</ref></type>
         <definition>FileSystemControllerStatus OmegaFileSystemController_read_file</definition>
         <argsstring>(OmegaFileSystemController_t *, FileHandle, FileSystemReadMode)</argsstring>
         <name>OmegaFileSystemController_read_file</name>
@@ -263,10 +257,10 @@
           <type><ref refid="structOmegaFileSystemController__t" kindref="compound">OmegaFileSystemController_t</ref> *</type>
         </param>
         <param>
-          <type>FileHandle</type>
+          <type><ref refid="OmegaFileSystemController_8h_1ad967b03d472fe00cce8699d8352753d4" kindref="member">FileHandle</ref></type>
         </param>
         <param>
-          <type>FileSystemReadMode</type>
+          <type><ref refid="OmegaFileSystemController_8h_1ab39b3bcddcc65be29311de1f21d701d8" kindref="member">FileSystemReadMode</ref></type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -274,7 +268,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" line="84" column="32" declfile="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" declline="84" declcolumn="32"/>
+        <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" line="124" column="32" declfile="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" declline="124" declcolumn="32"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -296,7 +290,7 @@
 <codeline lineno="10"><highlight class="comment"><sp/>*<sp/>File<sp/>Created:<sp/>Friday,<sp/>1st<sp/>March<sp/>2024<sp/>2:28:17<sp/>am</highlight></codeline>
 <codeline lineno="11"><highlight class="comment"><sp/>*<sp/>Author:<sp/>Chameera<sp/>Subasinghe<sp/>(omegaki113r@gmail.com)</highlight></codeline>
 <codeline lineno="12"><highlight class="comment"><sp/>*<sp/>-----</highlight></codeline>
-<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>Last<sp/>Modified:<sp/>Tuesday,<sp/>5th<sp/>March<sp/>2024<sp/>2:54:32<sp/>am</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>Last<sp/>Modified:<sp/>Thursday,<sp/>7th<sp/>March<sp/>2024<sp/>8:35:36<sp/>am</highlight></codeline>
 <codeline lineno="14"><highlight class="comment"><sp/>*<sp/>Modified<sp/>By:<sp/>Chameera<sp/>Subasinghe<sp/>(omegaki113r@gmail.com)</highlight></codeline>
 <codeline lineno="15"><highlight class="comment"><sp/>*<sp/>-----</highlight></codeline>
 <codeline lineno="16"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>2024<sp/>-<sp/>2024<sp/>0m3g4ki113r,<sp/>Xtronic</highlight></codeline>
@@ -319,60 +313,61 @@
 <codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="34"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FSC_SUCCESS,</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FSC_FAILED,</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FSC_INVALID_OPENMODE,</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FSC_INVALID_PARAMETERS,</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FSC_FILE_NOT_EXIST,</highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FSC_FILE_HANDLE_NOT_EXIST,</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FSC_NO_MEM,</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FSC_END_OF_FILE,</highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FSC_NOT_INIT,</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FSC_UNKNOWN</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/>FileSystemControllerStatus;</highlight></codeline>
-<codeline lineno="49"><highlight class="normal"></highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>READING<sp/>=<sp/>1<sp/>&lt;&lt;<sp/>0,</highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WRITING<sp/>=<sp/>1<sp/>&lt;&lt;<sp/>1,</highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>APPEND<sp/>=<sp/>1<sp/>&lt;&lt;<sp/>2,</highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OVERWRITE<sp/>=<sp/>1<sp/>&lt;&lt;<sp/>3,</highlight></codeline>
-<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/>FileSystemOpenMode;</highlight></codeline>
-<codeline lineno="57"><highlight class="normal"></highlight></codeline>
-<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>READ_LINE,</highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>READ_CHUNK,</highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>READ_ALL,</highlight></codeline>
-<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/>FileSystemReadMode;</highlight></codeline>
-<codeline lineno="64"><highlight class="normal"></highlight></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint64_t<sp/>FileHandle;</highlight></codeline>
-<codeline lineno="66"><highlight class="normal"></highlight></codeline>
-<codeline lineno="67" refid="structOmegaFileData__t" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>*in_out_buffer;</highlight></codeline>
-<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>buffer_size;</highlight></codeline>
-<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>read_written_size;</highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FileHandle<sp/>file_handle;</highlight></codeline>
-<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/><ref refid="structOmegaFileData__t" kindref="compound">OmegaFileData_t</ref>;</highlight></codeline>
-<codeline lineno="74"><highlight class="normal"></highlight></codeline>
-<codeline lineno="75" refid="structOmegaFileSystemController__t" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structOmegaFileData__t" kindref="compound">OmegaFileData_t</ref><sp/>in_out_data;</highlight></codeline>
-<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/><ref refid="structOmegaFileSystemController__t" kindref="compound">OmegaFileSystemController_t</ref>;</highlight></codeline>
-<codeline lineno="79"><highlight class="normal"></highlight></codeline>
-<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>FileSystemControllerStatus<sp/>OmegaFileSystemController_init(<ref refid="structOmegaFileSystemController__t" kindref="compound">OmegaFileSystemController_t</ref><sp/>*);</highlight></codeline>
-<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>FileSystemControllerStatus<sp/>OmegaFileSystemController_deinit(<ref refid="structOmegaFileSystemController__t" kindref="compound">OmegaFileSystemController_t</ref><sp/>*);</highlight></codeline>
-<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>FileSystemControllerStatus<sp/>OmegaFileSystemController_open_file(<ref refid="structOmegaFileSystemController__t" kindref="compound">OmegaFileSystemController_t</ref><sp/>*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FileHandle<sp/>*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,<sp/>FileSystemOpenMode);</highlight></codeline>
-<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>FileSystemControllerStatus<sp/>OmegaFileSystemController_close_file(<ref refid="structOmegaFileSystemController__t" kindref="compound">OmegaFileSystemController_t</ref><sp/>*,<sp/>FileHandle);</highlight></codeline>
-<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>FileSystemControllerStatus<sp/>OmegaFileSystemController_read_file(<ref refid="structOmegaFileSystemController__t" kindref="compound">OmegaFileSystemController_t</ref><sp/>*,<sp/>FileHandle,<sp/>FileSystemReadMode);</highlight></codeline>
-<codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="86"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="88"><highlight class="normal"></highlight></codeline>
-<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="OmegaFileSystemController_8h_1a434373c857899f086007b65c6d309ad9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="41" refid="OmegaFileSystemController_8h_1a434373c857899f086007b65c6d309ad9ad0da68c9b251a0b7ebe6e1a2af8665ed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="OmegaFileSystemController_8h_1a434373c857899f086007b65c6d309ad9ad0da68c9b251a0b7ebe6e1a2af8665ed" kindref="member">FSC_SUCCESS</ref>,</highlight></codeline>
+<codeline lineno="43" refid="OmegaFileSystemController_8h_1a434373c857899f086007b65c6d309ad9a1a65eb351752d40274fcfd19ca6fdf5d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="OmegaFileSystemController_8h_1a434373c857899f086007b65c6d309ad9a1a65eb351752d40274fcfd19ca6fdf5d" kindref="member">FSC_FAILED</ref>,</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>FSC_NO_INIT,</highlight></codeline>
+<codeline lineno="47" refid="OmegaFileSystemController_8h_1a434373c857899f086007b65c6d309ad9a5471b0b2d86a070163b90bb09927f8d3" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="OmegaFileSystemController_8h_1a434373c857899f086007b65c6d309ad9a5471b0b2d86a070163b90bb09927f8d3" kindref="member">FSC_INVALID_OPENMODE</ref>,</highlight></codeline>
+<codeline lineno="49" refid="OmegaFileSystemController_8h_1a434373c857899f086007b65c6d309ad9a31f69469406109b981f8e9dd1b7e6945" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="OmegaFileSystemController_8h_1a434373c857899f086007b65c6d309ad9a31f69469406109b981f8e9dd1b7e6945" kindref="member">FSC_INVALID_PARAMETERS</ref>,</highlight></codeline>
+<codeline lineno="51" refid="OmegaFileSystemController_8h_1a434373c857899f086007b65c6d309ad9ad25d679af85b5bd373fb9b1d0e1c45d3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="OmegaFileSystemController_8h_1a434373c857899f086007b65c6d309ad9ad25d679af85b5bd373fb9b1d0e1c45d3" kindref="member">FSC_FILE_NOT_EXIST</ref>,</highlight></codeline>
+<codeline lineno="53" refid="OmegaFileSystemController_8h_1a434373c857899f086007b65c6d309ad9a31d99f1af30d69f2187cdfebc6e473ab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="OmegaFileSystemController_8h_1a434373c857899f086007b65c6d309ad9a31d99f1af30d69f2187cdfebc6e473ab" kindref="member">FSC_FILE_HANDLE_NOT_EXIST</ref>,</highlight></codeline>
+<codeline lineno="55" refid="OmegaFileSystemController_8h_1a434373c857899f086007b65c6d309ad9a9668a838b48dcdbb8818637233aca111" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="OmegaFileSystemController_8h_1a434373c857899f086007b65c6d309ad9a9668a838b48dcdbb8818637233aca111" kindref="member">FSC_NO_MEM</ref>,</highlight></codeline>
+<codeline lineno="57" refid="OmegaFileSystemController_8h_1a434373c857899f086007b65c6d309ad9aafe2ab0e7b1fb27f3ef585b795c72a1f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="OmegaFileSystemController_8h_1a434373c857899f086007b65c6d309ad9aafe2ab0e7b1fb27f3ef585b795c72a1f" kindref="member">FSC_END_OF_FILE</ref>,</highlight></codeline>
+<codeline lineno="59" refid="OmegaFileSystemController_8h_1a434373c857899f086007b65c6d309ad9aefa02ebad4593abef103d0c99319f7b2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="OmegaFileSystemController_8h_1a434373c857899f086007b65c6d309ad9aefa02ebad4593abef103d0c99319f7b2" kindref="member">FSC_UNKNOWN</ref></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/><ref refid="OmegaFileSystemController_8h_1a434373c857899f086007b65c6d309ad9" kindref="member">FileSystemControllerStatus</ref>;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="OmegaFileSystemController_8h_1ad36f89306d960065a1a0406284474d12" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>READING<sp/>=<sp/>1<sp/>&lt;&lt;<sp/>0,</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WRITING<sp/>=<sp/>1<sp/>&lt;&lt;<sp/>1,</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>APPEND<sp/>=<sp/>1<sp/>&lt;&lt;<sp/>2,</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OVERWRITE<sp/>=<sp/>1<sp/>&lt;&lt;<sp/>3,</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/><ref refid="OmegaFileSystemController_8h_1ad36f89306d960065a1a0406284474d12" kindref="member">FileSystemOpenMode</ref>;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="OmegaFileSystemController_8h_1ab39b3bcddcc65be29311de1f21d701d8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>READ_LINE,</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>READ_CHUNK,</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>READ_ALL,</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/><ref refid="OmegaFileSystemController_8h_1ab39b3bcddcc65be29311de1f21d701d8" kindref="member">FileSystemReadMode</ref>;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="OmegaFileSystemController_8h_1ad967b03d472fe00cce8699d8352753d4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint64_t<sp/><ref refid="OmegaFileSystemController_8h_1ad967b03d472fe00cce8699d8352753d4" kindref="member">FileHandle</ref>;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="structOmegaFileData__t" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="106" refid="structOmegaFileData__t_1aa550de4be45917b63cd747323cf82e08" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>*<ref refid="structOmegaFileData__t_1aa550de4be45917b63cd747323cf82e08" kindref="member">in_out_buffer</ref>;</highlight></codeline>
+<codeline lineno="111" refid="structOmegaFileData__t_1a6d81380a6ed3023e7f27665d515fa8fe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="structOmegaFileData__t_1a6d81380a6ed3023e7f27665d515fa8fe" kindref="member">buffer_size</ref>;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>read_written_size;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="OmegaFileSystemController_8h_1ad967b03d472fe00cce8699d8352753d4" kindref="member">FileHandle</ref><sp/>file_handle;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/><ref refid="structOmegaFileData__t" kindref="compound">OmegaFileData_t</ref>;</highlight></codeline>
+<codeline lineno="116" refid="structOmegaFileSystemController__t" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structOmegaFileData__t" kindref="compound">OmegaFileData_t</ref><sp/>in_out_data;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/><ref refid="structOmegaFileSystemController__t" kindref="compound">OmegaFileSystemController_t</ref>;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="OmegaFileSystemController_8h_1a434373c857899f086007b65c6d309ad9" kindref="member">FileSystemControllerStatus</ref><sp/>OmegaFileSystemController_init(<ref refid="structOmegaFileSystemController__t" kindref="compound">OmegaFileSystemController_t</ref><sp/>*);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="OmegaFileSystemController_8h_1a434373c857899f086007b65c6d309ad9" kindref="member">FileSystemControllerStatus</ref><sp/>OmegaFileSystemController_open_file(<ref refid="structOmegaFileSystemController__t" kindref="compound">OmegaFileSystemController_t</ref><sp/>*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="OmegaFileSystemController_8h_1ad967b03d472fe00cce8699d8352753d4" kindref="member">FileHandle</ref><sp/>*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,<sp/><ref refid="OmegaFileSystemController_8h_1ad36f89306d960065a1a0406284474d12" kindref="member">FileSystemOpenMode</ref>);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="OmegaFileSystemController_8h_1a434373c857899f086007b65c6d309ad9" kindref="member">FileSystemControllerStatus</ref><sp/>OmegaFileSystemController_close_file(<ref refid="structOmegaFileSystemController__t" kindref="compound">OmegaFileSystemController_t</ref><sp/>*,<sp/><ref refid="OmegaFileSystemController_8h_1ad967b03d472fe00cce8699d8352753d4" kindref="member">FileHandle</ref>);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="OmegaFileSystemController_8h_1a434373c857899f086007b65c6d309ad9" kindref="member">FileSystemControllerStatus</ref><sp/>OmegaFileSystemController_read_file(<ref refid="structOmegaFileSystemController__t" kindref="compound">OmegaFileSystemController_t</ref><sp/>*,<sp/><ref refid="OmegaFileSystemController_8h_1ad967b03d472fe00cce8699d8352753d4" kindref="member">FileHandle</ref>,<sp/><ref refid="OmegaFileSystemController_8h_1ab39b3bcddcc65be29311de1f21d701d8" kindref="member">FileSystemReadMode</ref>);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h"/>
   </compounddef>

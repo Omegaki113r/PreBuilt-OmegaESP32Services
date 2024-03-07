@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
   <compounddef id="dir_142645e55dc1410f050269127b440adc" kind="dir">
-    <compoundname>/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaHashController/tests</compoundname>
+    <compoundname>tests</compoundname>
     <innerfile refid="OmegaHashController_8test_8h">OmegaHashController.test.h</innerfile>
     <briefdescription>
     </briefdescription>

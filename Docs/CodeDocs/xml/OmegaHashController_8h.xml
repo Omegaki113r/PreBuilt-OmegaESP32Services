@@ -18,7 +18,7 @@
         <label>string.h</label>
       </node>
       <node id="1">
-        <label>/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaHashController/inc/OmegaHashController.h</label>
+        <label>OmegaHashController.h</label>
         <link refid="OmegaHashController_8h"/>
         <childnode refid="2" relation="include">
         </childnode>

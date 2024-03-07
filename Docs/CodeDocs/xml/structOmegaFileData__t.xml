@@ -2,6 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
   <compounddef id="structOmegaFileData__t" kind="struct" language="C++" prot="public">
     <compoundname>OmegaFileData_t</compoundname>
+    <includes refid="OmegaFileSystemController_8h" local="no">OmegaFileSystemController.h</includes>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structOmegaFileData__t_1aa550de4be45917b63cd747323cf82e08" prot="public" static="no" mutable="no">
         <type>uint8_t *</type>
@@ -9,12 +10,13 @@
         <argsstring></argsstring>
         <name>in_out_buffer</name>
         <briefdescription>
+<para>pointer to the file content that needs to be written or read </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" line="69" column="17" bodyfile="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" bodystart="69" bodyend="-1"/>
+        <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" line="106" column="17" bodyfile="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" bodystart="106" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structOmegaFileData__t_1a6d81380a6ed3023e7f27665d515fa8fe" prot="public" static="no" mutable="no">
         <type>size_t</type>
@@ -22,12 +24,13 @@
         <argsstring></argsstring>
         <name>buffer_size</name>
         <briefdescription>
+<para>size of the in_out_buffer </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" line="70" column="16" bodyfile="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" bodystart="70" bodyend="-1"/>
+        <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" line="111" column="16" bodyfile="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" bodystart="111" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structOmegaFileData__t_1a9057c578e65413f64c70d08ada7e65b6" prot="public" static="no" mutable="no">
         <type>size_t</type>
@@ -40,10 +43,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" line="71" column="16" bodyfile="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" bodystart="71" bodyend="-1"/>
+        <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" line="113" column="16" bodyfile="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" bodystart="113" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structOmegaFileData__t_1a101d1a93281efa78a77f8aebaa57692a" prot="public" static="no" mutable="no">
-        <type>FileHandle</type>
+        <type><ref refid="OmegaFileSystemController_8h_1ad967b03d472fe00cce8699d8352753d4" kindref="member">FileHandle</ref></type>
         <definition>FileHandle OmegaFileData_t::file_handle</definition>
         <argsstring></argsstring>
         <name>file_handle</name>
@@ -53,14 +56,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" line="72" column="20" bodyfile="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" bodystart="72" bodyend="-1"/>
+        <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" line="114" column="20" bodyfile="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" bodystart="114" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>Used to store information about, read bytes, read number of bytes, written bytes and file handle. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" line="68" column="1" bodyfile="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" bodystart="67" bodyend="73"/>
+    <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" line="101" column="1" bodyfile="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" bodystart="100" bodyend="115"/>
     <listofallmembers>
       <member refid="structOmegaFileData__t_1a6d81380a6ed3023e7f27665d515fa8fe" prot="public" virt="non-virtual"><scope>OmegaFileData_t</scope><name>buffer_size</name></member>
       <member refid="structOmegaFileData__t_1a101d1a93281efa78a77f8aebaa57692a" prot="public" virt="non-virtual"><scope>OmegaFileData_t</scope><name>file_handle</name></member>
