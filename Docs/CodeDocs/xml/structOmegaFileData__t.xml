@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" line="106" column="17" bodyfile="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" bodystart="106" bodyend="-1"/>
+        <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" line="111" column="17" bodyfile="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" bodystart="111" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structOmegaFileData__t_1a6d81380a6ed3023e7f27665d515fa8fe" prot="public" static="no" mutable="no">
         <type>size_t</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" line="111" column="16" bodyfile="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" bodystart="111" bodyend="-1"/>
+        <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" line="116" column="16" bodyfile="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" bodystart="116" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structOmegaFileData__t_1a9057c578e65413f64c70d08ada7e65b6" prot="public" static="no" mutable="no">
         <type>size_t</type>
@@ -43,7 +43,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" line="113" column="16" bodyfile="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" bodystart="113" bodyend="-1"/>
+        <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" line="118" column="16" bodyfile="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" bodystart="118" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structOmegaFileData__t_1a101d1a93281efa78a77f8aebaa57692a" prot="public" static="no" mutable="no">
         <type><ref refid="OmegaFileSystemController_8h_1ad967b03d472fe00cce8699d8352753d4" kindref="member">FileHandle</ref></type>
@@ -56,7 +56,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" line="114" column="20" bodyfile="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" bodystart="114" bodyend="-1"/>
+        <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" line="119" column="20" bodyfile="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" bodystart="119" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -64,7 +64,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" line="101" column="1" bodyfile="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" bodystart="100" bodyend="115"/>
+    <location file="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" line="106" column="1" bodyfile="/home/om3gaki113r/Documents/ARCSIA/OmegaESP32Services/OmegaFileSystemController/inc/OmegaFileSystemController.h" bodystart="105" bodyend="120"/>
     <listofallmembers>
       <member refid="structOmegaFileData__t_1a6d81380a6ed3023e7f27665d515fa8fe" prot="public" virt="non-virtual"><scope>OmegaFileData_t</scope><name>buffer_size</name></member>
       <member refid="structOmegaFileData__t_1a101d1a93281efa78a77f8aebaa57692a" prot="public" virt="non-virtual"><scope>OmegaFileData_t</scope><name>file_handle</name></member>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ctx_1',['ctx',['../structOmegaHashController__t.html#a50d7dbea6ce6d9e7cf7ece86e8d3570c',1,'OmegaHashController_t']]]
+  ['buffer_5fsize_1',['buffer_size',['../structOmegaFileData__t.html#a6d81380a6ed3023e7f27665d515fa8fe',1,'OmegaFileData_t']]]
 ];

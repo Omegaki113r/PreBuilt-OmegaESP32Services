@@ -1,4 +1,13 @@
 var searchData=
 [
-  ['in_5fout_5fbuffer_25',['in_out_buffer',['../structOmegaFileData__t.html#aa550de4be45917b63cd747323cf82e08',1,'OmegaFileData_t']]]
+  ['hash256_17',['HASH256',['../OmegaHashController_8h.html#ac7eb238362294fe929ac5b0c199672bba4fa568b441da9fd81063a64528f4b679',1,'OmegaHashController.h']]],
+  ['hashalgorithm_18',['HashAlgorithm',['../OmegaHashController_8h.html#ac7eb238362294fe929ac5b0c199672bb',1,'OmegaHashController.h']]],
+  ['hashcontrollerstatus_19',['HashControllerStatus',['../OmegaHashController_8h.html#a5b6f8a4106c6eb4827afef40ec1b2417',1,'OmegaHashController.h']]],
+  ['hsc_5ffailed_20',['HSC_FAILED',['../OmegaHashController_8h.html#a5b6f8a4106c6eb4827afef40ec1b2417a3b80d8bf60acb49aa3c5f066a4e38031',1,'OmegaHashController.h']]],
+  ['hsc_5fhash_5falgo_5fnot_5ffound_21',['HSC_HASH_ALGO_NOT_FOUND',['../OmegaHashController_8h.html#a5b6f8a4106c6eb4827afef40ec1b2417ab8120df39299da6f4280dac49bf2626c',1,'OmegaHashController.h']]],
+  ['hsc_5fhash_5falgo_5fnot_5fsupported_22',['HSC_HASH_ALGO_NOT_SUPPORTED',['../OmegaHashController_8h.html#a5b6f8a4106c6eb4827afef40ec1b2417a2d16357521322f6ec70d3c5626a15ea4',1,'OmegaHashController.h']]],
+  ['hsc_5finvalid_5fparameters_23',['HSC_INVALID_PARAMETERS',['../OmegaHashController_8h.html#a5b6f8a4106c6eb4827afef40ec1b2417a7308d0dcc794d42fdd44d4beb2dc62b2',1,'OmegaHashController.h']]],
+  ['hsc_5fno_5fmem_24',['HSC_NO_MEM',['../OmegaHashController_8h.html#a5b6f8a4106c6eb4827afef40ec1b2417a70fb1f8d7f93726a15cc88f5aa179a14',1,'OmegaHashController.h']]],
+  ['hsc_5fsuccess_25',['HSC_SUCCESS',['../OmegaHashController_8h.html#a5b6f8a4106c6eb4827afef40ec1b2417a1b9d3d3d67a04553bb2c8737a362b2b1',1,'OmegaHashController.h']]],
+  ['hsc_5funknown_26',['HSC_UNKNOWN',['../OmegaHashController_8h.html#a5b6f8a4106c6eb4827afef40ec1b2417afa0ba3a7286b277545b752ab9461c81a',1,'OmegaHashController.h']]]
 ];

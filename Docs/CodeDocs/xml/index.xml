@@ -16,6 +16,7 @@
     <member refid="OmegaFileSystemController_8h_1a434373c857899f086007b65c6d309ad9" kind="enum"><name>FileSystemControllerStatus</name></member>
     <member refid="OmegaFileSystemController_8h_1a434373c857899f086007b65c6d309ad9ad0da68c9b251a0b7ebe6e1a2af8665ed" kind="enumvalue"><name>FSC_SUCCESS</name></member>
     <member refid="OmegaFileSystemController_8h_1a434373c857899f086007b65c6d309ad9a1a65eb351752d40274fcfd19ca6fdf5d" kind="enumvalue"><name>FSC_FAILED</name></member>
+    <member refid="OmegaFileSystemController_8h_1a434373c857899f086007b65c6d309ad9ac5d43284ff15a9759986a2e26ef32bec" kind="enumvalue"><name>FSC_NOT_INIT</name></member>
     <member refid="OmegaFileSystemController_8h_1a434373c857899f086007b65c6d309ad9a5471b0b2d86a070163b90bb09927f8d3" kind="enumvalue"><name>FSC_INVALID_OPENMODE</name></member>
     <member refid="OmegaFileSystemController_8h_1a434373c857899f086007b65c6d309ad9a31f69469406109b981f8e9dd1b7e6945" kind="enumvalue"><name>FSC_INVALID_PARAMETERS</name></member>
     <member refid="OmegaFileSystemController_8h_1a434373c857899f086007b65c6d309ad9ad25d679af85b5bd373fb9b1d0e1c45d3" kind="enumvalue"><name>FSC_FILE_NOT_EXIST</name></member>
@@ -34,9 +35,10 @@
     <member refid="OmegaFileSystemController_8h_1ab39b3bcddcc65be29311de1f21d701d8a07d3884af44683f7748a2837f9152c40" kind="enumvalue"><name>READ_ALL</name></member>
     <member refid="OmegaFileSystemController_8h_1ad967b03d472fe00cce8699d8352753d4" kind="typedef"><name>FileHandle</name></member>
     <member refid="OmegaFileSystemController_8h_1aa4eb29332f339ea97728580f926fb7dd" kind="function"><name>OmegaFileSystemController_init</name></member>
+    <member refid="OmegaFileSystemController_8h_1a717e4afd4e86741e63ef026a100ee23c" kind="function"><name>OmegaFileSystemController_deinit</name></member>
     <member refid="OmegaFileSystemController_8h_1abeb80b5afc6c8d5b124d0a2686c946ab" kind="function"><name>OmegaFileSystemController_open_file</name></member>
     <member refid="OmegaFileSystemController_8h_1ab46ead3bed399714aadfdb1d89074475" kind="function"><name>OmegaFileSystemController_close_file</name></member>
-    <member refid="OmegaFileSystemController_8h_1a83cc8eee3de8e3f7c70d9708a07a9cc7" kind="function"><name>OmegaFileSystemController_read_file</name></member>
+    <member refid="OmegaFileSystemController_8h_1aa0fb18fc30329c29c1d6fda7edad620c" kind="function"><name>OmegaFileSystemController_read_file</name></member>
   </compound>
   <compound refid="OmegaFileSystemController_8test_8h" kind="file"><name>OmegaFileSystemController.test.h</name>
     <member refid="OmegaFileSystemController_8test_8h_1accd7dd3b922ec416b68e9d5ab0826b0d" kind="function"><name>test_controllerNULL_FileSystemController_deinit</name></member>
@@ -55,6 +57,15 @@
     <member refid="OmegaFileSystemController_8test_8h_1afa1c9e2863ab6b1f7e5c6f480aad7b34" kind="function"><name>test_APPENDWRITE_FileSystemController_open_file</name></member>
     <member refid="OmegaFileSystemController_8test_8h_1a82651cf7a8bcf58b8739973f931c5f74" kind="function"><name>test_APPENDREADWRITE_FileSystemController_open_file</name></member>
     <member refid="OmegaFileSystemController_8test_8h_1ac8568975c9e22903645b22d7eec3d3de" kind="function"><name>test_OVERWRITERREADWRITE_FileSystemController_open_file</name></member>
+    <member refid="OmegaFileSystemController_8test_8h_1a0346e9bc44fb1aa1dbbd91fda9dca388" kind="function"><name>test_controllerNULL_read_file</name></member>
+    <member refid="OmegaFileSystemController_8test_8h_1a11bc972c5c25b2657645a1f81f0323f4" kind="function"><name>test_file_handleINVALLID_read_file</name></member>
+    <member refid="OmegaFileSystemController_8test_8h_1a7d24b783f6476843a5ee909120bfc754" kind="function"><name>test_read_modeINVALID_read_file</name></member>
+    <member refid="OmegaFileSystemController_8test_8h_1a3a5b91bd75302d436f2940472b004387" kind="function"><name>test_size_to_be_readINVALID_read_file</name></member>
+    <member refid="OmegaFileSystemController_8test_8h_1a9db3c35e4061913616b517d1b82d61d3" kind="function"><name>test_controllerNOINIT_read_file</name></member>
+    <member refid="OmegaFileSystemController_8test_8h_1a7afc0cc3407a75d62999610529a6cc48" kind="function"><name>test_file_handleHANDLE_NOT_EXISTread_file_line</name></member>
+    <member refid="OmegaFileSystemController_8test_8h_1a646d476f7630d6a602c531b2a2701a75" kind="function"><name>test_read_file_line</name></member>
+    <member refid="OmegaFileSystemController_8test_8h_1a19d5aef204fe594129850e82f63d0bc6" kind="function"><name>test_read_file_chunk</name></member>
+    <member refid="OmegaFileSystemController_8test_8h_1a55a960341ac41aa29a109e71f085987a" kind="function"><name>test_read_file_all</name></member>
   </compound>
   <compound refid="OmegaHashController_8h" kind="file"><name>OmegaHashController.h</name>
     <member refid="OmegaHashController_8h_1a5b6f8a4106c6eb4827afef40ec1b2417" kind="enum"><name>HashControllerStatus</name></member>
