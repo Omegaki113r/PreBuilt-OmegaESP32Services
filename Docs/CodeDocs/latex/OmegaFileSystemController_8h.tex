@@ -1,6 +1,7 @@
 \hypertarget{OmegaFileSystemController_8h}{}\doxysection{Omega\+File\+System\+Controller.\+h File Reference}
 \label{OmegaFileSystemController_8h}\index{OmegaFileSystemController.h@{OmegaFileSystemController.h}}
 {\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
 Include dependency graph for Omega\+File\+System\+Controller.\+h\+:
 \nopagebreak
 \begin{figure}[H]
@@ -36,6 +37,7 @@ enum \mbox{\hyperlink{OmegaFileSystemController_8h_a434373c857899f086007b65c6d30
 \mbox{\hyperlink{OmegaFileSystemController_8h_a434373c857899f086007b65c6d309ad9a31d99f1af30d69f2187cdfebc6e473ab}{F\+S\+C\+\_\+\+F\+I\+L\+E\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+N\+O\+T\+\_\+\+E\+X\+I\+ST}}, 
 \mbox{\hyperlink{OmegaFileSystemController_8h_a434373c857899f086007b65c6d309ad9a9668a838b48dcdbb8818637233aca111}{F\+S\+C\+\_\+\+N\+O\+\_\+\+M\+EM}}, 
 \newline
+\mbox{\hyperlink{OmegaFileSystemController_8h_a434373c857899f086007b65c6d309ad9a5ce4036464e41996c398d75025bf4dac}{F\+S\+C\+\_\+\+I\+N\+C\+O\+M\+P\+L\+E\+T\+E\+\_\+\+F\+I\+L\+E\+\_\+\+W\+R\+I\+TE}}, 
 \mbox{\hyperlink{OmegaFileSystemController_8h_a434373c857899f086007b65c6d309ad9aafe2ab0e7b1fb27f3ef585b795c72a1f}{F\+S\+C\+\_\+\+E\+N\+D\+\_\+\+O\+F\+\_\+\+F\+I\+LE}}, 
 \mbox{\hyperlink{OmegaFileSystemController_8h_a434373c857899f086007b65c6d309ad9aefa02ebad4593abef103d0c99319f7b2}{F\+S\+C\+\_\+\+U\+N\+K\+N\+O\+WN}}
  \}
@@ -68,6 +70,9 @@ enum \mbox{\hyperlink{OmegaFileSystemController_8h_ab39b3bcddcc65be29311de1f21d7
 \item 
 \mbox{\Hypertarget{OmegaFileSystemController_8h_aa0fb18fc30329c29c1d6fda7edad620c}\label{OmegaFileSystemController_8h_aa0fb18fc30329c29c1d6fda7edad620c}} 
 \mbox{\hyperlink{OmegaFileSystemController_8h_a434373c857899f086007b65c6d309ad9}{File\+System\+Controller\+Status}} {\bfseries Omega\+File\+System\+Controller\+\_\+read\+\_\+file} (\mbox{\hyperlink{structOmegaFileSystemController__t}{Omega\+File\+System\+Controller\+\_\+t}} $\ast$, \mbox{\hyperlink{OmegaFileSystemController_8h_ad967b03d472fe00cce8699d8352753d4}{File\+Handle}}, \mbox{\hyperlink{OmegaFileSystemController_8h_ab39b3bcddcc65be29311de1f21d701d8}{File\+System\+Read\+Mode}}, size\+\_\+t)
+\item 
+\mbox{\Hypertarget{OmegaFileSystemController_8h_a9e25b4e371cf90f8cd36e75fa565d077}\label{OmegaFileSystemController_8h_a9e25b4e371cf90f8cd36e75fa565d077}} 
+\mbox{\hyperlink{OmegaFileSystemController_8h_a434373c857899f086007b65c6d309ad9}{File\+System\+Controller\+Status}} {\bfseries Omega\+File\+System\+Controller\+\_\+write\+\_\+file} (\mbox{\hyperlink{structOmegaFileSystemController__t}{Omega\+File\+System\+Controller\+\_\+t}} $\ast$, \mbox{\hyperlink{OmegaFileSystemController_8h_ad967b03d472fe00cce8699d8352753d4}{File\+Handle}}, const uint8\+\_\+t $\ast$, const size\+\_\+t)
 \end{DoxyCompactItemize}
 
 
@@ -125,6 +130,10 @@ F\+S\+C\+\_\+\+F\+I\+L\+E\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+N\+O\+T\+\_\+\+E\+X\+I\
 
 \raisebox{\heightof{T}}[0pt][0pt]{\index{FSC\_NO\_MEM@{FSC\_NO\_MEM}!OmegaFileSystemController.h@{OmegaFileSystemController.h}}\index{OmegaFileSystemController.h@{OmegaFileSystemController.h}!FSC\_NO\_MEM@{FSC\_NO\_MEM}}}\mbox{\Hypertarget{OmegaFileSystemController_8h_a434373c857899f086007b65c6d309ad9a9668a838b48dcdbb8818637233aca111}\label{OmegaFileSystemController_8h_a434373c857899f086007b65c6d309ad9a9668a838b48dcdbb8818637233aca111}} 
 F\+S\+C\+\_\+\+N\+O\+\_\+\+M\+EM&Indicates failure due to not having enough heap memory needed to allocate for the operation. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FSC\_INCOMPLETE\_FILE\_WRITE@{FSC\_INCOMPLETE\_FILE\_WRITE}!OmegaFileSystemController.h@{OmegaFileSystemController.h}}\index{OmegaFileSystemController.h@{OmegaFileSystemController.h}!FSC\_INCOMPLETE\_FILE\_WRITE@{FSC\_INCOMPLETE\_FILE\_WRITE}}}\mbox{\Hypertarget{OmegaFileSystemController_8h_a434373c857899f086007b65c6d309ad9a5ce4036464e41996c398d75025bf4dac}\label{OmegaFileSystemController_8h_a434373c857899f086007b65c6d309ad9a5ce4036464e41996c398d75025bf4dac}} 
+F\+S\+C\+\_\+\+I\+N\+C\+O\+M\+P\+L\+E\+T\+E\+\_\+\+F\+I\+L\+E\+\_\+\+W\+R\+I\+TE&Indicates a failure during file writing operation. All the content were no written to the file. \\
 \hline
 
 \raisebox{\heightof{T}}[0pt][0pt]{\index{FSC\_END\_OF\_FILE@{FSC\_END\_OF\_FILE}!OmegaFileSystemController.h@{OmegaFileSystemController.h}}\index{OmegaFileSystemController.h@{OmegaFileSystemController.h}!FSC\_END\_OF\_FILE@{FSC\_END\_OF\_FILE}}}\mbox{\Hypertarget{OmegaFileSystemController_8h_a434373c857899f086007b65c6d309ad9aafe2ab0e7b1fb27f3ef585b795c72a1f}\label{OmegaFileSystemController_8h_a434373c857899f086007b65c6d309ad9aafe2ab0e7b1fb27f3ef585b795c72a1f}} 

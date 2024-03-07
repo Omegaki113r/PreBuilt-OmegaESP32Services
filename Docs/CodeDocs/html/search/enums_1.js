@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['hashalgorithm_114',['HashAlgorithm',['../OmegaHashController_8h.html#ac7eb238362294fe929ac5b0c199672bb',1,'OmegaHashController.h']]],
-  ['hashcontrollerstatus_115',['HashControllerStatus',['../OmegaHashController_8h.html#a5b6f8a4106c6eb4827afef40ec1b2417',1,'OmegaHashController.h']]]
+  ['hashalgorithm_115',['HashAlgorithm',['../OmegaHashController_8h.html#ac7eb238362294fe929ac5b0c199672bb',1,'OmegaHashController.h']]],
+  ['hashcontrollerstatus_116',['HashControllerStatus',['../OmegaHashController_8h.html#a5b6f8a4106c6eb4827afef40ec1b2417',1,'OmegaHashController.h']]]
 ];

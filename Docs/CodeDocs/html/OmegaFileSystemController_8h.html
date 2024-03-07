@@ -76,13 +76,15 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for OmegaFileSystemController.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="OmegaFileSystemController_8h__incl.png" border="0" usemap="#OmegaFileSystemController_8h" alt=""/></div>
 <map name="OmegaFileSystemController_8h" id="OmegaFileSystemController_8h">
 <area shape="rect" title=" " alt="" coords="5,5,221,32"/>
-<area shape="rect" title=" " alt="" coords="78,80,149,107"/>
+<area shape="rect" title=" " alt="" coords="31,80,102,107"/>
+<area shape="rect" title=" " alt="" coords="126,80,197,107"/>
 </map>
 </div>
 </div>
@@ -116,7 +118,8 @@ Enumerations</h2></td></tr>
 <a class="el" href="OmegaFileSystemController_8h.html#a434373c857899f086007b65c6d309ad9a31d99f1af30d69f2187cdfebc6e473ab">FSC_FILE_HANDLE_NOT_EXIST</a>, 
 <a class="el" href="OmegaFileSystemController_8h.html#a434373c857899f086007b65c6d309ad9a9668a838b48dcdbb8818637233aca111">FSC_NO_MEM</a>, 
 <br />
-&#160;&#160;<a class="el" href="OmegaFileSystemController_8h.html#a434373c857899f086007b65c6d309ad9aafe2ab0e7b1fb27f3ef585b795c72a1f">FSC_END_OF_FILE</a>, 
+&#160;&#160;<a class="el" href="OmegaFileSystemController_8h.html#a434373c857899f086007b65c6d309ad9a5ce4036464e41996c398d75025bf4dac">FSC_INCOMPLETE_FILE_WRITE</a>, 
+<a class="el" href="OmegaFileSystemController_8h.html#a434373c857899f086007b65c6d309ad9aafe2ab0e7b1fb27f3ef585b795c72a1f">FSC_END_OF_FILE</a>, 
 <a class="el" href="OmegaFileSystemController_8h.html#a434373c857899f086007b65c6d309ad9aefa02ebad4593abef103d0c99319f7b2">FSC_UNKNOWN</a>
 <br />
  }</td></tr>
@@ -153,6 +156,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aa0fb18fc30329c29c1d6fda7edad620c"><td class="memItemLeft" align="right" valign="top"><a id="aa0fb18fc30329c29c1d6fda7edad620c"></a>
 <a class="el" href="OmegaFileSystemController_8h.html#a434373c857899f086007b65c6d309ad9">FileSystemControllerStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><b>OmegaFileSystemController_read_file</b> (<a class="el" href="structOmegaFileSystemController__t.html">OmegaFileSystemController_t</a> *, <a class="el" href="OmegaFileSystemController_8h.html#ad967b03d472fe00cce8699d8352753d4">FileHandle</a>, <a class="el" href="OmegaFileSystemController_8h.html#ab39b3bcddcc65be29311de1f21d701d8">FileSystemReadMode</a>, size_t)</td></tr>
 <tr class="separator:aa0fb18fc30329c29c1d6fda7edad620c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e25b4e371cf90f8cd36e75fa565d077"><td class="memItemLeft" align="right" valign="top"><a id="a9e25b4e371cf90f8cd36e75fa565d077"></a>
+<a class="el" href="OmegaFileSystemController_8h.html#a434373c857899f086007b65c6d309ad9">FileSystemControllerStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><b>OmegaFileSystemController_write_file</b> (<a class="el" href="structOmegaFileSystemController__t.html">OmegaFileSystemController_t</a> *, <a class="el" href="OmegaFileSystemController_8h.html#ad967b03d472fe00cce8699d8352753d4">FileHandle</a>, const uint8_t *, const size_t)</td></tr>
+<tr class="separator:a9e25b4e371cf90f8cd36e75fa565d077"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Chameera Subasinghe </dd></dl>
@@ -188,6 +194,8 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a434373c857899f086007b65c6d309ad9a31d99f1af30d69f2187cdfebc6e473ab"></a>FSC_FILE_HANDLE_NOT_EXIST&#160;</td><td class="fielddoc"><p>Indicates a API misuse of invalid parameter of type FileHandle being received to functions. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a434373c857899f086007b65c6d309ad9a9668a838b48dcdbb8818637233aca111"></a>FSC_NO_MEM&#160;</td><td class="fielddoc"><p>Indicates failure due to not having enough heap memory needed to allocate for the operation. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a434373c857899f086007b65c6d309ad9a5ce4036464e41996c398d75025bf4dac"></a>FSC_INCOMPLETE_FILE_WRITE&#160;</td><td class="fielddoc"><p>Indicates a failure during file writing operation. All the content were no written to the file. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a434373c857899f086007b65c6d309ad9aafe2ab0e7b1fb27f3ef585b795c72a1f"></a>FSC_END_OF_FILE&#160;</td><td class="fielddoc"><p>Indicates the end of file reading a file. </p>
 </td></tr>
