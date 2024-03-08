@@ -1,16 +1,16 @@
 /**
  * @file OmegaHashController.h
  * @author Chameera Subasinghe
- * @date Friday, 1st March 2024 2:30:46 am
+ * @date Friday, 1st March 2024 2:28:17 am
  * @copyright Copyright 2024 - 2024 0m3g4ki113r, Xtronic
  * */
 /*
  * Project: OmegaESP32Services
  * File Name: OmegaHashController.h
- * File Created: Friday, 1st March 2024 2:30:46 am
+ * File Created: Friday, 1st March 2024 2:28:17 am
  * Author: Chameera Subasinghe (omegaki113r@gmail.com)
  * -----
- * Last Modified: Saturday, 2nd March 2024 4:38:19 pm
+ * Last Modified: Tuesday, 5th March 2024 2:10:48 am
  * Modified By: Chameera Subasinghe (omegaki113r@gmail.com)
  * -----
  * Copyright 2024 - 2024 0m3g4ki113r, Xtronic
@@ -19,7 +19,9 @@
  * Date      	By	Comments
  * ----------	---	---------------------------------------------------------
  *
- * 02-03-2024	0m3g4	added hash algorithm HSC_HASH_ALGO_NOT_SUPPORTED
+ * 05-03-2024	0m3g4	Declared the OmegaHashController_deinit
+ *
+ * 03-03-2024	0m3g4	Writing documentation that generate doxygen docs
  */
 
 #ifndef __OMEGA_HASH_CONTROLLER__
@@ -37,36 +39,88 @@ extern "C"
 #include <mbedtls/md.h>
 #include <mbedtls/sha256.h>
 
+    /// @brief ReturnTypes/StatusCodes for the Hash Controller
     typedef enum
     {
+        /// @brief Indicates success in any operation related to HashController
         HSC_SUCCESS,
+        /// @brief Indicates failure in any operation related to HashController
         HSC_FAILED,
+        /// @brief Indicates failure due to invalid parameters provided to functions/sub-routines and/or structures
+        HSC_INVALID_PARAMETERS,
+        /// @brief Indicates that provided HashAlgorithm parameter in `OmegaHashController_init` is not valid.
+        HSC_HASH_ALGO_NOT_FOUND,
         /**
-         * @brief mapped to MBEDTLS_ERR_MD_BAD_INPUT_DATA of mbedtls
+         * @brief Indicates that API is trying to use unsupported hash algorithms.
+         * mbedtls supports many hash algorithms [described inside `mbedtls_md_type_t`].
+         * But this controller only supports SHA256 as of 2024-03-03
          *
          */
-        HSC_INVALID_PARAMETERS,
-        HSC_HASH_ALGO_NOT_FOUND,
         HSC_HASH_ALGO_NOT_SUPPORTED,
+        /// @brief Indicate that there is not enough Heap/Stack memory to allocate for the necessary operations
         HSC_NO_MEM,
+        /// @brief Indicates Unknown error has occured
         HSC_UNKNOWN
     } HashControllerStatus;
 
+    /// @brief Hash Algorithms that are supported by Hash Controller
     typedef enum
     {
+        /// @brief abstraction for `MBEDTLS_MD_SHA256` inside md.h `mbedtls_md_type_t`
         HASH256,
     } HashAlgorithm;
 
+    /// @brief HashController instance that needs to be provided to use the Controller
     typedef struct
     {
+        /// @brief mbedtls context that will be used by the internal APIs to ingest and digest incoming data and/or data streams
         mbedtls_md_context_t ctx;
     } OmegaHashController_t;
 
-    HashControllerStatus OmegaHashController_init(OmegaHashController_t *, HashAlgorithm);
-    HashControllerStatus OmegaHashController_reset(OmegaHashController_t *);
-    HashControllerStatus OmegaHashController_ingest_data_single(OmegaHashController_t *, const uint8_t *, const size_t, uint8_t *);
-    HashControllerStatus OmegaHashController_ingest_data_streamed(OmegaHashController_t *, const uint8_t *, const size_t, uint8_t *out_buffer);
-
+    /**
+     * @brief Initialize and allocate required memory for the specified hash algorithm for the HashController instance.
+     *
+     * @param in_controller Input parameter. Instance of the `OmegaHashController_t` that needs to be initialized. Cannot be `NULL`
+     * @param in_hash_algorithm Input parameter. Indicates the hash algorithm that is going to be used by this instance of HashController
+     * @return HashControllerStatus HSC_SUCCESS if `OmegaHashController_t` initialized successfully.
+     */
+    HashControllerStatus OmegaHashController_init(OmegaHashController_t *in_controller, HashAlgorithm in_hash_algorithm);
+    /**
+     * @brief After a successful `OmegaHashController_ingest_data_streamed()` hashing operation, `OmegaHashController_t` needs to be reset before doing another hash operation. Purpose of this function is to reset all the internal variables, free old memory and allocate new memory.
+     *          This function isn't required to be called if the hash operation was `OmegaHashController_ingest_data_single()`. This function will be called internally in `OmegaHashController_ingest_data_single()`
+     *
+     * @param in_controller Input parameter. Instance of the `OmegaHashController_t` that needs to be reset
+     * @return HashControllerStatus HSC_SUCCESS if `OmegaHashController_t` reset succesfully
+     */
+    HashControllerStatus OmegaHashController_reset(OmegaHashController_t *in_controller);
+    /**
+     * @brief If all the bytes needs to be hashed is known before hashing and/or system has enough heap/stack memory to allocate to all the bytes, This function can be called.
+     *
+     * @param in_controller Input parameter. Instance of the `OmegaHashController_t` that previously initialized/reset. Therefore this cannot be NULL
+     * @param in_buffer Input parameter. buffer that contains the bytes needs to be hashed. Cannot be NULL.
+     * @param in_buffer_size Input parameter. Size of the input buffer that was provided in the `in_buffer` parameter. Cannot be NULL, 0 or negative.
+     * @param out_buffer Output parameter. Result of the hash operation will be set in this byte buffer. This needs to be in the correct size.
+     * @return HashControllerStatus HSC_SUCCESS if hash operation was successful.
+     */
+    HashControllerStatus OmegaHashController_ingest_data_single(OmegaHashController_t *in_controller, const uint8_t *in_buffer, const size_t in_buffer_size, const uint8_t *out_buffer);
+    /**
+     * @brief If all the bytes needs to be hashed is not known before hashing and/or system doesn't have enough heap/stack memory to allocate to all the bytes, This function can be called.
+     *          To ingest the input data as well as retireve the final hash output this function is being used with providing some parameters as NULL
+     *
+     * @param in_controller Input parameter. Instance of the `OmegaHashController_t` that previously initialized/reset. Therefore this cannot be NULL
+     * @param in_buffer Input parameter. buffer that contains the bytes needs to be hashed. This cannot be NULL during data ingestion and can be NULL when retireving hashed data.
+     * @param in_buffer_size Input parameter. Size of the input buffer that was provided in the `in_buffer` parameter. This cannot be NULL during data ingestion and can be NULL, 0 or negative when retireving hashed data.
+     * @param out_buffer Output parameter. Result of the hash operation will be set in this byte buffer. This can be NULL during ingestion of data. Cannot be NULL when retireving hashed data.
+     * @return HashControllerStatus HSC_SUCCESS if the hash operations [ingestion and digestion] was successful.
+     */
+    HashControllerStatus OmegaHashController_ingest_data_streamed(OmegaHashController_t *in_controller, const uint8_t *in_buffer, const size_t in_buffer_size, const uint8_t *out_buffer);
+    /**
+     * @brief used to free all the allocated resources
+     *
+     * @param in_controller Input parameter. Instance of `OmegaHashController_t` that previously initialized.
+     * @return HashControllerStatus  HSC_SUCCESS if the freeing of resources was successful
+     */
+    HashControllerStatus OmegaHashController_deinit(OmegaHashController_t *in_controller);
 #ifdef __cplusplus
 }
 #endif
