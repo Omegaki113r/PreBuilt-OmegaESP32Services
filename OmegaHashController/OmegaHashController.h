@@ -10,8 +10,8 @@
  * File Created: Friday, 1st March 2024 2:28:17 am
  * Author: Chameera Subasinghe (omegaki113r@gmail.com)
  * -----
- * Last Modified: Tuesday, 5th March 2024 2:10:48 am
- * Modified By: Chameera Subasinghe (omegaki113r@gmail.com)
+ * Last Modified: Tuesday, 28th May 2024 8:16:03 pm
+ * Modified By: Omegaki113r (omegaki113r@gmail.com)
  * -----
  * Copyright 2024 - 2024 0m3g4ki113r, Xtronic
  * -----
@@ -67,15 +67,10 @@ extern "C"
     typedef enum
     {
         /// @brief abstraction for `MBEDTLS_MD_SHA256` inside md.h `mbedtls_md_type_t`
-        HASH256,
+        HASH256 = MBEDTLS_MD_SHA256,
     } HashAlgorithm;
 
-    /// @brief HashController instance that needs to be provided to use the Controller
-    typedef struct
-    {
-        /// @brief mbedtls context that will be used by the internal APIs to ingest and digest incoming data and/or data streams
-        mbedtls_md_context_t ctx;
-    } OmegaHashController_t;
+    typedef uint64_t HashControllerHandle;
 
     /**
      * @brief Initialize and allocate required memory for the specified hash algorithm for the HashController instance.
@@ -84,7 +79,7 @@ extern "C"
      * @param in_hash_algorithm Input parameter. Indicates the hash algorithm that is going to be used by this instance of HashController
      * @return HashControllerStatus HSC_SUCCESS if `OmegaHashController_t` initialized successfully.
      */
-    HashControllerStatus OmegaHashController_init(OmegaHashController_t *in_controller, HashAlgorithm in_hash_algorithm);
+    HashControllerHandle OmegaHashController_init(HashAlgorithm in_hash_algorithm);
     /**
      * @brief After a successful `OmegaHashController_ingest_data_streamed()` hashing operation, `OmegaHashController_t` needs to be reset before doing another hash operation. Purpose of this function is to reset all the internal variables, free old memory and allocate new memory.
      *          This function isn't required to be called if the hash operation was `OmegaHashController_ingest_data_single()`. This function will be called internally in `OmegaHashController_ingest_data_single()`
@@ -92,7 +87,7 @@ extern "C"
      * @param in_controller Input parameter. Instance of the `OmegaHashController_t` that needs to be reset
      * @return HashControllerStatus HSC_SUCCESS if `OmegaHashController_t` reset succesfully
      */
-    HashControllerStatus OmegaHashController_reset(OmegaHashController_t *in_controller);
+    HashControllerStatus OmegaHashController_reset(HashControllerHandle in_handle);
     /**
      * @brief If all the bytes needs to be hashed is known before hashing and/or system has enough heap/stack memory to allocate to all the bytes, This function can be called.
      *
@@ -102,7 +97,7 @@ extern "C"
      * @param out_buffer Output parameter. Result of the hash operation will be set in this byte buffer. This needs to be in the correct size.
      * @return HashControllerStatus HSC_SUCCESS if hash operation was successful.
      */
-    HashControllerStatus OmegaHashController_ingest_data_single(OmegaHashController_t *in_controller, const uint8_t *in_buffer, const size_t in_buffer_size, const uint8_t *out_buffer);
+    HashControllerStatus OmegaHashController_ingest_data_single(HashControllerHandle in_handle, const uint8_t *in_buffer, const size_t in_buffer_size, const uint8_t *out_buffer);
     /**
      * @brief If all the bytes needs to be hashed is not known before hashing and/or system doesn't have enough heap/stack memory to allocate to all the bytes, This function can be called.
      *          To ingest the input data as well as retireve the final hash output this function is being used with providing some parameters as NULL
@@ -113,14 +108,14 @@ extern "C"
      * @param out_buffer Output parameter. Result of the hash operation will be set in this byte buffer. This can be NULL during ingestion of data. Cannot be NULL when retireving hashed data.
      * @return HashControllerStatus HSC_SUCCESS if the hash operations [ingestion and digestion] was successful.
      */
-    HashControllerStatus OmegaHashController_ingest_data_streamed(OmegaHashController_t *in_controller, const uint8_t *in_buffer, const size_t in_buffer_size, const uint8_t *out_buffer);
+    HashControllerStatus OmegaHashController_ingest_data_streamed(HashControllerHandle in_handle, const uint8_t *in_buffer, const size_t in_buffer_size, const uint8_t *out_buffer);
     /**
      * @brief used to free all the allocated resources
      *
      * @param in_controller Input parameter. Instance of `OmegaHashController_t` that previously initialized.
      * @return HashControllerStatus  HSC_SUCCESS if the freeing of resources was successful
      */
-    HashControllerStatus OmegaHashController_deinit(OmegaHashController_t *in_controller);
+    HashControllerStatus OmegaHashController_deinit(HashControllerHandle in_handle);
 #ifdef __cplusplus
 }
 #endif
