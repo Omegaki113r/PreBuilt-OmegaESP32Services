@@ -10,14 +10,16 @@
  * File Created: Friday, 1st March 2024 2:28:17 am
  * Author: Chameera Subasinghe (omegaki113r@gmail.com)
  * -----
- * Last Modified: Friday, 8th March 2024 6:02:27 am
- * Modified By: Chameera Subasinghe (omegaki113r@gmail.com)
+ * Last Modified: Tuesday, 28th May 2024 7:33:55 pm
+ * Modified By: Omegaki113r (omegaki113r@gmail.com)
  * -----
  * Copyright 2024 - 2024 0m3g4ki113r, Xtronic
  * -----
  * HISTORY:
  * Date      	By	Comments
  * ----------	---	---------------------------------------------------------
+ * 
+ * 28-05-2024	0m3g4	refactor the code to replicate the current code structure
  *
  * 08-03-2024	0m3g4	documentation added
  *
@@ -35,8 +37,8 @@
 #ifndef __OMEGA_FILE_SYSTEM_CONTROLLER__
 #define __OMEGA_FILE_SYSTEM_CONTROLLER__
 
-#include <stdlib.h>
 #include <stdint.h>
+#include <stdlib.h>
 
 #ifdef __cplusplus
 extern "C"
@@ -85,13 +87,13 @@ extern "C"
      */
     typedef enum
     {
-        /// @brief dsfs
+        /// @brief Indicates Reading
         READING = 1 << 0,
-        /// @brief sdfs
+        /// @brief Indicates Writing
         WRITING = 1 << 1,
-        /// @brief sdfsd
+        /// @brief Indicates Appending
         APPEND = 1 << 2,
-        /// @brief sdfsd
+        /// @brief Indicates Overwrite
         OVERWRITE = 1 << 3,
     } FileSystemOpenMode;
 
@@ -112,80 +114,40 @@ extern "C"
     /// @brief FileHandle that needs to be used to operate using FileSystemController
     typedef uint64_t FileHandle;
 
-    /// @brief Used to store information about, read bytes, read number of bytes, written bytes and file handle
-    typedef struct
-    {
-        /// @brief pointer to the file content that needs to be written or read
-        uint8_t *in_out_buffer;
-        /// @brief size of the in_out_buffer
-        size_t buffer_size;
-        /// @brief size that was written or read
-        size_t read_written_size;
-        /// @brief file handle that is related to the file system operation
-        FileHandle file_handle;
-    } OmegaFileData_t;
-
-    /// @brief FileSystemController instance that needs to be provided to use the controller API
-    typedef struct
-    {
-        /// @brief instance of `OmegaFileData_t` which will be used to store results of FileSystem Operations
-        OmegaFileData_t in_out_data;
-    } OmegaFileSystemController_t;
-
-    /**
-     * @brief Initialize and allocate required memory for the FileSystemController
-     *
-     * @param in_controller Input Parameter. Pointer to an instance of `OmegaFileSystemController_t` that needs to be initialized. Cannot be NULL
-     * @return FileSystemControllerStatus FSC_SUCCESS if `OmegaFileSystemController_t` initialized successfully
-     */
-    FileSystemControllerStatus OmegaFileSystemController_init(OmegaFileSystemController_t *in_controller);
-    /**
-     * @brief Used to free and deallocate all the resources that were allocated by `OmegaFileSystemController_init()`
-     *
-     * @param in_controller Input parameter. Pointer to an instance of `OmegaFileSystemController_t` that needs to be de-initialized. Cannot be NULL.
-     * @return FileSystemControllerStatus FSC_SUCCESS if the freeing of resources was successful
-     */
-    FileSystemControllerStatus OmegaFileSystemController_deinit(OmegaFileSystemController_t *in_controller);
     /**
      * @brief Used to open a file.
      *
-     * @param in_controller Input parameter. Pointer to an instance of `OmegaSystemController_t` that needs to be used to open up the file. Cannot be NULL. Prior to calling this function
-     *                          `OmegaFileSystemController_init()` needs to be called on this parameter
-     * @param in_file_handle Input parameter. Pointer to an instance of `FileHandle`. FileHandle needs to be used to do file operations (Read, Write, ...). Cannot be NULL.
      * @param in_file_name Input parameter. Path of the file that needs to be opened with the filename and the extention of the file.
      * @param in_open_mode Input parameter. Enumaration of type `FileSystemOpenMode`. Please see the brief of `FileSystemOpenMode`
-     * @return FileSystemControllerStatus FSC_SUCCESS if the file opened successfully
+     * @return FileHandle greather than 0 if the file opened successfully else 0. FileHandle needs to be used to do file operations (Read, Write, ...). Cannot be 0.
      */
-    FileSystemControllerStatus OmegaFileSystemController_open_file(OmegaFileSystemController_t *in_controller, const FileHandle *in_file_handle, const char *in_file_name, FileSystemOpenMode in_open_mode);
+    FileHandle OmegaFileSystemController_open_file(const char *in_file_name, FileSystemOpenMode in_open_mode);
     /**
      * @brief Used to close a previously opened file.
      *
-     * @param in_controller Input parameter. Pointer to an instance of `OmegaFileSystemController_t` that needs to be used to open up the file. Cannot be NULL.
-     * @param in_file_handle Input parameter. Instance of `FileHandle` which were used to open a file using `OmegaFileSystemController_open_file()`. Cannot be NULL.
+     * @param in_file_handle Input parameter. Instance of `FileHandle` which were used to open a file using `OmegaFileSystemController_open_file()`. Cannot be 0.
      * @return FileSystemControllerStatus FSC_SUCCESS if the file closed successfully
      */
-    FileSystemControllerStatus OmegaFileSystemController_close_file(OmegaFileSystemController_t *in_controller, const FileHandle in_file_handle);
+    FileSystemControllerStatus OmegaFileSystemController_close_file(const FileHandle in_file_handle);
     /**
      * @brief Read from a previously opened file.
      *              Can be used on the same file multiple times depending on the `FileSystemReadMode` i.e. READ_LINE,READ_CHUNK
      *
-     * @param in_controller Input parameter. Pointer to an instance of `OmegaFileSystemController_t` that needs to be used to read the file. Cannot be NULL.
-     * @param in_file_handle Input parameter. Instance of `FileHandle` which were used to open a file using `OmegaFileSystemController_open_file()`. Cannot be NULL.
+     * @param in_file_handle Input parameter. Instance of `FileHandle` which were used to open a file using `OmegaFileSystemController_open_file()`. Cannot be 0.
      * @param in_read_mode Input parameter. Enumaration of type `FileSystemReadMode` that will help to use the API flexibly. i.e. read the whole file, read till a new line is found, read a predefined amount of bytes
-     * @param in_size_to_read Input parameter. If the `in_read_mode` is `READ_CHUNK` then this parameter is used to read that amount of bytes from the file, else this can be NULL, 0 or negative
+     * @param in_size_to_read Input parameter. If the `in_read_mode` is `READ_CHUNK` then this parameter is used to read that amount of bytes from the file, else this cannot be NULL
      * @return FileSystemControllerStatus FSC_SUCCESS if the file read successfully
      */
-    FileSystemControllerStatus OmegaFileSystemController_read_file(OmegaFileSystemController_t *in_controller, const FileHandle in_file_handle, FileSystemReadMode in_read_mode, size_t in_size_to_read);
+    FileSystemControllerStatus OmegaFileSystemController_read_file(const FileHandle in_file_handle, FileSystemReadMode in_read_mode, uint8_t *in_buffer, size_t *in_out_size_to_read);
     /**
      * @brief Write a previously opened file.
      *
-     * @param in_controller Input parameter. Pointer to an instance of `OmegaFileSystemController_t` that needs to be used to write the file. Cannot be NULL.
      * @param in_file_handle Input parameter. Instance of `FileHandle` which were used to open a file using `OmegaFileSystemController_open_file()`. Cannot be NULL.
      * @param in_buffer Input parameter. Content of this will be used to write the file. Cannot be NULL
      * @param in_size_to_write Input parameter. Amount of bytes that needs to be written from the `in_buffer`. Should be less or equal to the size of `in_buffer`
      * @return FileSystemControllerStatus FSC_SUCCESS if the filw written successfully
      */
-    FileSystemControllerStatus OmegaFileSystemController_write_file(OmegaFileSystemController_t *in_controller, const FileHandle in_file_handle, const uint8_t *in_buffer, const size_t in_size_to_write);
+    FileSystemControllerStatus OmegaFileSystemController_write_file(const FileHandle in_file_handle, const uint8_t *in_buffer, size_t *in_size_to_write);
 #ifdef __cplusplus
 }
 #endif
