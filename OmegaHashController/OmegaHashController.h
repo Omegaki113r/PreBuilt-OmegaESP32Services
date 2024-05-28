@@ -10,7 +10,7 @@
  * File Created: Friday, 1st March 2024 2:28:17 am
  * Author: Chameera Subasinghe (omegaki113r@gmail.com)
  * -----
- * Last Modified: Tuesday, 28th May 2024 8:16:03 pm
+ * Last Modified: Tuesday, 28th May 2024 8:30:22 pm
  * Modified By: Omegaki113r (omegaki113r@gmail.com)
  * -----
  * Copyright 2024 - 2024 0m3g4ki113r, Xtronic
@@ -18,6 +18,8 @@
  * HISTORY:
  * Date      	By	Comments
  * ----------	---	---------------------------------------------------------
+ *
+ * 28-05-2024	0m3g4	refactor the code to replicate the current code structure
  *
  * 05-03-2024	0m3g4	Declared the OmegaHashController_deinit
  *
